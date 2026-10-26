@@ -3,7 +3,14 @@ set -euo pipefail
 
 project_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 wiki_checkout="$(dirname -- "$project_dir")/bioinfo-wiki.wiki"
-wiki_remote='https://github.com/SpiralKernel/bioinfo-wiki.wiki.git'
+main_remote="$(git -C "$project_dir" remote get-url origin)"
+if [[ "$main_remote" != https://github.com/*/*.git ]]; then
+    echo '主仓库 origin 需为 GitHub HTTPS .git 地址，请先核对远程配置。' >&2
+    exit 1
+fi
+project_url="${main_remote%.git}"
+wiki_remote="${project_url}.wiki.git"
+wiki_url="${project_url}/wiki"
 git_command=(git)
 if command -v gh >/dev/null 2>&1; then
     git_command+=(-c 'credential.helper=!gh auth git-credential')
@@ -16,7 +23,7 @@ fi
 
 if [[ ! -e "$wiki_checkout" ]]; then
     if ! "${git_command[@]}" clone "$wiki_remote" "$wiki_checkout"; then
-        echo '请先打开 https://github.com/SpiralKernel/bioinfo-wiki/wiki 并创建保存第一页，然后重试。' >&2
+        echo "请先打开 $wiki_url 并创建保存第一页，然后重试。" >&2
         exit 1
     fi
 fi
@@ -45,4 +52,4 @@ if "${git_command[@]}" -C "$wiki_checkout" diff --cached --quiet; then
 fi
 "${git_command[@]}" -C "$wiki_checkout" commit -m '更新中文生信Wiki'
 "${git_command[@]}" -C "$wiki_checkout" push
-echo '已发布：https://github.com/SpiralKernel/bioinfo-wiki/wiki'
+echo "已发布：$wiki_url"

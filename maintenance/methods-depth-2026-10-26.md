@@ -83,3 +83,7 @@
 本轮没有因为扩写而重新执行全部GWAS/GS或新增真实组学流程。没有执行FarmCPU/BLINK、专业REML/MCMC、ADMIXTURE/NGSadmix、PSMC/MSMC/SMC++、SKAT、真实组装、真实仪器/湿实验或各组学完整上游；对应页明确限定教学算术与概念范围。原有已实跑的公开GWAS、人工GS、DESeq2、Sniffles/TRGT等案例保留各自验证证据。
 
 下一轮按学生实际练习反馈补前置与难点，并选真实数据闭环，尤其系统发育、实际组装、真实CNV/TE和组学原始数据。不能把本轮目录覆盖、数值断言或图形效果当成真实研究性能证明。
+
+## 发布时核对仓库迁移
+
+当前主仓库和Wiki的origin均已配置为`SpiralKernel/bioinfo-wiki-migrated`。发布时通过GitHub API确认旧名与新名指向同一公开仓库且Wiki启用；旧Wiki地址返回新名页面，旧raw图片地址仍返回200。发布脚本原先固定旧名并会拒绝当前Wiki远程，已改为从主仓库当前HTTPS origin推导Wiki地址，保留目标远程一致性与人工修改保护。历史正文中的旧链接继续通过已验证的GitHub重定向访问。
