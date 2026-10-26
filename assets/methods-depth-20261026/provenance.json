@@ -1,0 +1,21 @@
+{
+  "scope": "Artificial teaching inputs only",
+  "scripts": {
+    "examples/methods_foundations_demo.py": {
+      "sha256": "fd35e9820d163409d79d0019cba684f4ad5a3cd11109d38b8884723e447caffa",
+      "summary_sha256": "e49cc7a63d259570b208f01e4592fcee41b9a9daaf1f42e42c32389e529453b9",
+      "cases": 26
+    },
+    "examples/methods_genetics_demo.py": {
+      "sha256": "0d474a6f683ff45e8ef4fcb011e327f802ee891b3580f3374eacb55bc5f7df23",
+      "summary_sha256": "811f46864b17cc690d56bf5258bcf2038c3c381cef9b3c6d9b27545d78b706f4",
+      "cases": 22
+    },
+    "examples/methods_omics_demo.py": {
+      "sha256": "ff57774bea795f470d8a66f7d07858fb795663232ce0cb9b5e6a385cf2c2aeb4",
+      "summary_sha256": "3a2e68aeeb4cbcb32c14d220191709b671b696521bc6aedcddd45036a7a420f9",
+      "cases": 22
+    }
+  },
+  "plot_script_sha256": "b14423ebb0acbb65ad7572cbfb045511cb519c3187a2fcafe02dc31f8f0cd8a9"
+}

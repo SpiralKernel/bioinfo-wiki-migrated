@@ -1,0 +1,1521 @@
+[
+  {
+    "title": "BLAST原理与种子延伸",
+    "previous_body_characters": 954,
+    "body_characters": 2978,
+    "source_sha256": "21304aba37c1a5c0caac71901a4c595cf5b0495ca6d3013b74c7c003641e8c02",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "blast"
+      }
+    ],
+    "headings": [
+      "从短词命中到候选比对",
+      "为什么种子可能漏掉最优片段",
+      "延伸为什么不能无限进行",
+      "读懂输出时必须区分的量",
+      "实操选项与排错",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "BWT与FM索引的精确匹配",
+    "previous_body_characters": 0,
+    "body_characters": 2676,
+    "source_sha256": "6d73612e078d88db893df786c51c241f86f14dac26945c35a99b546ad64dec9c",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "fm-index"
+      }
+    ],
+    "headings": [
+      "从后缀顺序得到BWT",
+      "反向搜索的两个计数",
+      "真正节省资源还依靠哪些结构",
+      "精确匹配不是完整read mapping",
+      "排错与自测",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "CNV深度校正分段与拷贝数估计",
+    "previous_body_characters": 585,
+    "body_characters": 2889,
+    "source_sha256": "3ae332dd896db7a4b5a53dcd4bee04dd604df4937237e695ba599d7211efbdfc",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "cnv"
+      }
+    ],
+    "headings": [
+      "先说明从深度能知道多少",
+      "从可比窗口生成信号",
+      "手算纯净样本与混合样本",
+      "分段是有代价的合并",
+      "输入输出与检查",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "DNBSEQ测序与滚环扩增",
+    "previous_body_characters": 550,
+    "body_characters": 2773,
+    "source_sha256": "8dfa82aa13f8322753e993422d6e897d71e5e10e3a3fc52a65121a8179138006",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "rca"
+      }
+    ],
+    "headings": [
+      "从问题进入",
+      "圆环、串联复制和阵列分别做什么",
+      "一个能手算的分子账本",
+      "输入输出及实际检查顺序",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "EM算法与隐变量估计",
+    "previous_body_characters": 0,
+    "body_characters": 3201,
+    "source_sha256": "83839696c87be289cc7c80a3ac77531dcc2bd67dc1da19a2d6d1e7f0a92be7a2",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "em"
+      }
+    ],
+    "headings": [
+      "隐变量让似然出现求和",
+      "两成分的一次更新",
+      "为什么需要初始化与多个起点",
+      "与K-means、梯度下降的区别",
+      "排错与自测",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "FST与群体分化估计",
+    "previous_body_characters": 679,
+    "body_characters": 2699,
+    "source_sha256": "4018c90451d65014a40491eae8c32e5ae5bea2dc50cc4ee8ba26553d3990789c",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "fst"
+      }
+    ],
+    "headings": [
+      "从杂合度理解分化",
+      "一个可手算的Hudson形式",
+      "多位点、负值与窗口",
+      "输入、输出与解释顺序",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "FarmCPU与BLINK原理",
+    "previous_body_characters": 996,
+    "body_characters": 2728,
+    "source_sha256": "8db7a949d9d8c7dfc5cd5840652599403e42605c1ae03a63c8815e9847fafb80",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "background"
+      }
+    ],
+    "headings": [
+      "先理解条件检验",
+      "FarmCPU的循环",
+      "BLINK改变了什么",
+      "手算一次“拟合改善是否值得”",
+      "怎样组织一次可审查的分析",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "GBLUP与rrBLUP原理及实现",
+    "previous_body_characters": 1375,
+    "body_characters": 3055,
+    "source_sha256": "a7e7f40e522605a1778c664f14b72910ad6363ca6cecf2396024865cac6413c8",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "gblup"
+      }
+    ],
+    "headings": [
+      "输入和中心化先于求解",
+      "个体模型及预测",
+      "标记模型及尺度关系",
+      "两个个体的可核算例",
+      "模型大小、参数与交付",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "GS中的REML混合模型方程与求解",
+    "previous_body_characters": 1268,
+    "body_characters": 2885,
+    "source_sha256": "90d29f826137d8f7adfe808d3acd6eb759b16aa20cee185a30afe53fd3116f3f",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "reml"
+      }
+    ],
+    "headings": [
+      "为什么不是先减均值再普通ML",
+      "模型、协方差和限制似然",
+      "给定方差后的混合模型方程",
+      "数值正确与统计正确分别检查",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "Illumina合成测序与簇信号",
+    "previous_body_characters": 743,
+    "body_characters": 3009,
+    "source_sha256": "aea64a7915bd9685901e3259c9bd140e36b948b3b8bdb92e29581e7a09cc4de8",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "illumina"
+      }
+    ],
+    "headings": [
+      "学习目标与前置",
+      "从一个模板到一串碱基",
+      "同步为何影响长read",
+      "R1、索引、R2的账不能混",
+      "参数、产物和排错",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "LD衰减与遗传距离分析",
+    "previous_body_characters": 560,
+    "body_characters": 2344,
+    "source_sha256": "8a4664be1028436f3a8c7a15e1a8dd7895c79ce1576dac0267613dd4b8110d89",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "ld"
+      }
+    ],
+    "headings": [
+      "用单倍型把公式读懂",
+      "从成对统计量到曲线",
+      "物理距离与遗传距离",
+      "比较群体时先做哪三个控制",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "Nanopore测序与直接RNA",
+    "previous_body_characters": 694,
+    "body_characters": 2883,
+    "source_sha256": "be3dae59956f441d4d93f44b8efc94352186de4c856554d45a590e52c37ad3e4",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "nanopore"
+      }
+    ],
+    "headings": [
+      "先问测到的是哪种分子",
+      "电流为何不等于一个碱基一档电压",
+      "DNA、cDNA、直接RNA分别保留什么",
+      "文件与参数的交接",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "PCA原理与实现",
+    "previous_body_characters": 606,
+    "body_characters": 3300,
+    "source_sha256": "462166ae6696e42debb84ce13a40e7950e366e50507b4a2f49693a10c97d0fd1",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "pca"
+      }
+    ],
+    "headings": [
+      "从“找变化最多的方向”到SVD",
+      "一眼能看懂的三样本",
+      "为什么不能机械标准化所有数据",
+      "投影、诊断与实际检查",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "PCR与扩增基础",
+    "previous_body_characters": 667,
+    "body_characters": 2799,
+    "source_sha256": "148a30dc8b2a4d4d5379ccfe3e64dd9b4716abb84ae4ab7bf97d26e6d80def50",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "pcr"
+      }
+    ],
+    "headings": [
+      "学完应能回答什么",
+      "从一次复制理解指数增长",
+      "手算增长，也手算偏差",
+      "怎样把原理用于读实验记录",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "PacBioSMRT与HiFi测序",
+    "previous_body_characters": 642,
+    "body_characters": 2758,
+    "source_sha256": "fc0f97f36dd4ff8d9e8a35ac69b0065f168c050ccd2be54db2d0bd8cb4286038",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "hifi"
+      }
+    ],
+    "headings": [
+      "本页解决的混淆",
+      "从SMRTbell到共识",
+      "一个刻意简化的共识算术",
+      "输入输出和下游能做什么",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "RNA交互作用与LRT比较",
+    "previous_body_characters": 579,
+    "body_characters": 2912,
+    "source_sha256": "5e9ef99f1aa1eb811365fbffd5b565d9bcdb8b33bd0b4205cdd4b96386e2545b",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "interaction"
+      }
+    ],
+    "headings": [
+      "先把科学问题写成可比较的效应",
+      "四种组合的模型",
+      "LRT是“少掉一组参数会怎样”",
+      "从设计到可报告结果",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "RNA计数模型差异表达与效应收缩",
+    "previous_body_characters": 1150,
+    "body_characters": 3378,
+    "source_sha256": "a25baf8d1bf49744f535e338f017c72c6510f32982c90c610b57c0cde1d4e276",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "rna"
+      }
+    ],
+    "headings": [
+      "问题与前置",
+      "把每个符号对应到数据",
+      "先手算尺度，再理解模型",
+      "为什么要收缩LFC",
+      "操作链与检查点",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "SV事件匹配与一对一评估",
+    "previous_body_characters": 513,
+    "body_characters": 2728,
+    "source_sha256": "661d5ff4711fce77432bba9174f6f393312d9ad3fc705b4fa279a7dc76bdcf72",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "matching"
+      }
+    ],
+    "headings": [
+      "从规则建立候选匹配边",
+      "一个候选不能被无限复用",
+      "TP-base与TP-comp为什么分别报告",
+      "一次可复查的实际配置",
+      "参数敏感性与边界",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "SV合并匹配与群体再分型",
+    "previous_body_characters": 644,
+    "body_characters": 2735,
+    "source_sha256": "c379caa1a715e5f4dfe2be7d9a9a527309a857ec9467e971d5f743761986962a",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "merge"
+      }
+    ],
+    "headings": [
+      "三个步骤和三个输入对象",
+      "相近不等于同一个等位",
+      "DELLY与SNF的两种组织方式",
+      "实测反例：缺失与低质量参考不能混在一起",
+      "矩阵构建与敏感性分析",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "Sanger测序原理与峰图判读",
+    "previous_body_characters": 705,
+    "body_characters": 2772,
+    "source_sha256": "fe780c7082ad8990086ccdf6b38d65967d21192bc92db8f4bd7348e2fa1ed58b",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "sanger"
+      }
+    ],
+    "headings": [
+      "从测量对象开始",
+      "链终止怎样变成有顺序的峰",
+      "手算一个错位混合",
+      "实际峰图的阅读顺序",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "Smith-Waterman局部比对",
+    "previous_body_characters": 844,
+    "body_characters": 2845,
+    "source_sha256": "d90c9b5817a641e13f0ede65dcebfd805932fe5075092379a817c13ca4ee66db",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "smith-waterman"
+      }
+    ],
+    "headings": [
+      "相比全局比对，改了哪三个地方",
+      "先手算，再看程序",
+      "评分参数改变的实际含义",
+      "算法精确，不等于命中有生物意义",
+      "异常与自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "deBruijn图与短读长组装原理",
+    "previous_body_characters": 0,
+    "body_characters": 2833,
+    "source_sha256": "f3720e5199ac7e14dbdbe9b25cebd2f27e1dc6c40bd1e1fc0d72b76468c22b12",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "debruijn"
+      }
+    ],
+    "headings": [
+      "先固定一种图定义",
+      "ATGACG怎样变成路径",
+      "k为什么同时影响连通与重复",
+      "常见图形意味着什么",
+      "从图到contig再到质量判断",
+      "自测与排错",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "t检验配对设计与Welch检验",
+    "previous_body_characters": 1058,
+    "body_characters": 3111,
+    "source_sha256": "968ba1f90bd0057bdb8b6ad31ccb5987ffdeb4344e463431cbe5c913a6d3c9a4",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "t-tests"
+      }
+    ],
+    "headings": [
+      "独立两组与配对在估计不同的不确定性",
+      "一份小数据分别计算",
+      "正态性究竟要求谁",
+      "输入、输出与排错",
+      "自测与方法比较",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "亲缘近交与ROH分析",
+    "previous_body_characters": 598,
+    "body_characters": 2580,
+    "source_sha256": "5f8c3b189dbdd48cfcb9cdf85a3fbd21ce35bbf02fd3e5236d3414e54908275a",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "roh"
+      }
+    ],
+    "headings": [
+      "先确定关系的基准",
+      "ROH检测在找什么",
+      "手算FROH：区间和分母同样重要",
+      "长度为什么与时间有关又不能精确换算",
+      "可操作的核查顺序",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "代谢组注释定量与多变量分析",
+    "previous_body_characters": 509,
+    "body_characters": 2799,
+    "source_sha256": "3835479a42643a6d0ef7f1015ac5e1c41e343a75b4d3a793adb77fb900303097",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "metabolomics"
+      }
+    ],
+    "headings": [
+      "先拆开三个问题",
+      "从质谱特征到注释层级",
+      "缩放改变几何关系",
+      "从无监督到监督",
+      "输入输出与排错",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "似然最大似然与MAP估计",
+    "previous_body_characters": 647,
+    "body_characters": 2856,
+    "source_sha256": "08f46d6b3fbc5645c9d0b8b0aed9e50dfeb45be98b1ae7c1aab6665c86a7313f",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "mle-map"
+      }
+    ],
+    "headings": [
+      "把观测固定，把参数当变量",
+      "加入先验，为什么估计向中间移动",
+      "MAP与正则化怎样连接",
+      "生信里的似然链条",
+      "异常与自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "假设检验与双侧单侧选择",
+    "previous_body_characters": 661,
+    "body_characters": 2692,
+    "source_sha256": "9896b242398ea490e0e77de00b6c85f385ed8ddfaace37497b21658e0fe2c0dc",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "hypothesis"
+      }
+    ],
+    "headings": [
+      "一个完整检验需要五个要素",
+      "用10次抛硬币完整算一遍",
+      "如何决定单双侧与多次比较",
+      "未拒绝、等价与交互作用",
+      "报告和排错",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "分类指标ROC与PR曲线",
+    "previous_body_characters": 764,
+    "body_characters": 2978,
+    "source_sha256": "24d515e8f00d6c4f4d52009a270b4321ccda09c4455b2ca93ef2a5883ad17d97",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "classification"
+      }
+    ],
+    "headings": [
+      "单个阈值与整条曲线",
+      "四个样本完整走一遍",
+      "不平衡为什么影响precision",
+      "分数排序与概率校准",
+      "排错与自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "列联表卡方与Fisher精确检验",
+    "previous_body_characters": 1061,
+    "body_characters": 2971,
+    "source_sha256": "de807b8274b5bf917775113c73da862ad74f4a2512901c517e2550a2e24b636a",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "contingency"
+      }
+    ],
+    "headings": [
+      "卡方从哪里来",
+      "用四格表完整核对",
+      "Fisher检验“精确”在哪里",
+      "富集与其他场景的边界",
+      "排错与自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "动态规划与序列比对基础",
+    "previous_body_characters": 728,
+    "body_characters": 2948,
+    "source_sha256": "70f1d3dedc3eb4d34c54b60db671e1558cfbca12ac0c99d1c8e1d61e47c5e49b",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "global-alignment"
+      }
+    ],
+    "headings": [
+      "从指数枚举到二维状态",
+      "用ACGT和AGT手算",
+      "参数与资源成本",
+      "怎样判断结果是否值得信任",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "区间重叠最近基因与候选映射",
+    "previous_body_characters": 647,
+    "body_characters": 2936,
+    "source_sha256": "4925d13754ba1b93514e1fd4126738bf56103ce2e4f656e00495a1fb230168cd",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "intervals"
+      }
+    ],
+    "headings": [
+      "三个问题用三种答案",
+      "把坐标标准写在输入旁",
+      "最近距离也有定义",
+      "一个记录为什么变成很多行",
+      "从位置候选到功能候选",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "半导体测序与同聚物信号",
+    "previous_body_characters": 434,
+    "body_characters": 2598,
+    "source_sha256": "1c725aecdfaf70e3ff5e3ab9e1d54fdbdb7fcae8e2726cc1cd0fe38a480efcab",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "ion"
+      }
+    ],
+    "headings": [
+      "问题与前置",
+      "从掺入到电信号",
+      "一个两候选长度模型",
+      "如何连接下游变异分析",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "单细胞差异表达与差异丰度",
+    "previous_body_characters": 569,
+    "body_characters": 2734,
+    "source_sha256": "454aa09335f615707a3b99b13699fd62daa91a772dab72209d566aa5611d4896",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "pseudobulk"
+      }
+    ],
+    "headings": [
+      "把目标和独立单位放在第一行",
+      "为什么不能把几千个细胞当几千名受试者",
+      "一个权重不同就改结论的例子",
+      "pseudobulk的实际步骤",
+      "差异丰度的分母",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "单细胞降维邻居图与聚类原理",
+    "previous_body_characters": 642,
+    "body_characters": 2907,
+    "source_sha256": "10fd25a757ae9eb4d86e4ba3ab715791f305cb4b56164bf22e4e5a5dbe47b76a",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "neighbors"
+      }
+    ],
+    "headings": [
+      "先分清数据层",
+      "从特征到几何",
+      "从距离到邻居图",
+      "四个点的手算",
+      "输入、输出和检查顺序",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "变异评估真值集合与可检测区域",
+    "previous_body_characters": 694,
+    "body_characters": 2786,
+    "source_sha256": "56d926cbb415a65d342aec4cc82da809be2c28848c787a425c7c3c7ae29b1a38",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "benchmark"
+      }
+    ],
+    "headings": [
+      "区分三种范围",
+      "一个交集陷阱",
+      "匹配层级决定计数",
+      "按错误类型分层",
+      "如何审计一次评估",
+      "评价不等于功能或临床结论",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "图与最短路径的生信入门",
+    "previous_body_characters": 698,
+    "body_characters": 2887,
+    "source_sha256": "17f33042aea86d3b5aea9a6beca69a76818b5a7412b50f29e67f8f02357e9c91",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "bfs"
+      }
+    ],
+    "headings": [
+      "先把节点和边说清楚",
+      "BFS为什么找到最少边路径",
+      "跟着队列走一遍",
+      "两个常见误用",
+      "排错与自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "多组学整合与潜变量模型",
+    "previous_body_characters": 597,
+    "body_characters": 2780,
+    "source_sha256": "d0912255c14767567c0aada5a2da4a606953c815d6e5e86bc983157db32b047d",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "multiomics"
+      }
+    ],
+    "headings": [
+      "先定义“整合”在解决什么",
+      "一个多数据块模型",
+      "手算载荷和符号歧义",
+      "无监督、监督、相关与证据整合",
+      "输出和排错",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "富集分析与GSEA",
+    "previous_body_characters": 1045,
+    "body_characters": 3067,
+    "source_sha256": "de53fe1b6cb1571e58797da7ca10d26c89a7d51179a613c101dd5959e0fa3707",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "enrichment"
+      }
+    ],
+    "headings": [
+      "列表问题和排序问题先分开",
+      "ORA的四个数",
+      "GSEA的运行和分数",
+      "实际输入与输出",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "小变异检测的似然与局部组装",
+    "previous_body_characters": 672,
+    "body_characters": 2693,
+    "source_sha256": "d75ba157bc727426d56eeb917cebc110f27c7ad9374c349c1d3f1f407a2aae51",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "genotype"
+      }
+    ],
+    "headings": [
+      "输入、候选与输出",
+      "从碱基错误到基因型似然",
+      "为什么在log空间计算",
+      "Pileup与局部组装的思路",
+      "参数如何改变结果",
+      "接入已验证的实践",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案"
+    ]
+  },
+  {
+    "title": "差异峰与差异甲基化方法",
+    "previous_body_characters": 648,
+    "body_characters": 3028,
+    "source_sha256": "6f96995c05ce4d48a3b086229b06f8c1d7274768169c410bc6cb22e1bdf7aeb7",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "epigenetics"
+      }
+    ],
+    "headings": [
+      "同叫表观组，测量却不同",
+      "差异峰：先统一区域，再比较样本",
+      "甲基化：同样0.5，不同精度",
+      "从位点到区域的额外决定",
+      "输入输出与排错",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "广义线性模型与逻辑回归",
+    "previous_body_characters": 847,
+    "body_characters": 2989,
+    "source_sha256": "f88bd867eaa7b13e1f4e15514f926ab631ca4ab717c99332627e34c66736feb3",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "glm"
+      }
+    ],
+    "headings": [
+      "三个组成部分决定了模型",
+      "逻辑系数怎样变成概率",
+      "offset为什么系数固定为1",
+      "从拟合到解释的步骤",
+      "排错与自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "微生物组组成差异与多样性方法",
+    "previous_body_characters": 685,
+    "body_characters": 3080,
+    "source_sha256": "e1eaf3fced446bcf859adf7bc1cf2271ae14f406334b921b4dd3ef070d46bd2f",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "microbiome"
+      }
+    ],
+    "headings": [
+      "先问数据能辨认哪个分母",
+      "封闭组成为何制造联动",
+      "对数比表达的是相对信息",
+      "多样性与距离回答什么",
+      "交付与排错",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "排序查找与哈希在生信中的应用",
+    "previous_body_characters": 936,
+    "body_characters": 2876,
+    "source_sha256": "c12d109468bb77959065f0a1e5c170bd9b2a4f83a007591a7057c719ab03b203",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "search-hash"
+      }
+    ],
+    "headings": [
+      "为什么排序后可以少查很多次",
+      "一个带重复值的手算",
+      "哈希为什么适合精确键",
+      "输入输出与选型",
+      "常见异常与自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "数据泄漏与交叉验证",
+    "previous_body_characters": 994,
+    "body_characters": 2748,
+    "source_sha256": "8b8bf7728412f461c0448c4847ed73333b3eeb37f2395536a24197142b1adc3c",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "leakage"
+      }
+    ],
+    "headings": [
+      "先写部署问题与损失",
+      "四个对象的最小反例",
+      "哪些步骤必须留在训练范围",
+      "单层、嵌套与最终测试",
+      "折数、分组和报告",
+      "与本项目实际GS案例连接",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "方差分析交互作用与对比",
+    "previous_body_characters": 813,
+    "body_characters": 2824,
+    "source_sha256": "16cc394afc2df93067971f8d5d1d1e1a425c17dc2a1a3acee08a8ce9c1422620",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "anova"
+      }
+    ],
+    "headings": [
+      "一因素ANOVA在检验什么",
+      "一个能手算的总体例子",
+      "对比是明确问题的线性组合",
+      "交互作用为什么是“差异的差异”",
+      "诊断与报告",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "梯度下降与数值优化",
+    "previous_body_characters": 797,
+    "body_characters": 2731,
+    "source_sha256": "cf93e7eaebada884b6e75fdd6f87bab0edbcf92b362036f0fc7eb1baf467f5ca",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "gradient"
+      }
+    ],
+    "headings": [
+      "更新公式的每个量",
+      "用一维二次函数看稳定区间",
+      "真实模型还要处理什么",
+      "停止条件不是一句“收敛了”",
+      "自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "正则化过拟合与模型选择",
+    "previous_body_characters": 675,
+    "body_characters": 2688,
+    "source_sha256": "cd9cd6d38174821c67e748424c610f4a8a38d287a9ac7b5869ab7cae300a7540",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "regularization"
+      }
+    ],
+    "headings": [
+      "先分清三个误差",
+      "岭回归的目标函数与手算",
+      "LASSO与elastic net为何不同",
+      "超参数如何选才可评价",
+      "与GS及推断的边界",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "正态性方差齐性与模型诊断",
+    "previous_body_characters": 775,
+    "body_characters": 2832,
+    "source_sha256": "38e86fe37df6dffb352d4e01a66b4e48180ac8925a3a5613c2200865ca51daf9",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "diagnostics"
+      }
+    ],
+    "headings": [
+      "三类条件不要混成一个检验",
+      "一个肉眼容易忽略的异方差",
+      "为什么“先检验再决定方法”容易误导",
+      "诊断异常后怎样处理",
+      "输入与报告清单",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "相关回归与混杂",
+    "previous_body_characters": 810,
+    "body_characters": 2797,
+    "source_sha256": "0a964b90c52ed9ed7b21c4a7524c8df35950442268e311da6dd9c6ea50c5c3c0",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "confounding"
+      }
+    ],
+    "headings": [
+      "Pearson、Spearman与回归斜率",
+      "一个“组内正、整体负”的例子",
+      "调整协变量为什么也需要因果考虑",
+      "如何看散点和残差",
+      "自测与结论边界",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "短读长与长读长变异证据比较",
+    "previous_body_characters": 534,
+    "body_characters": 2828,
+    "source_sha256": "33810ccac29c7bf4414a36bf754ab94af4792046ea793cb89e83e70aece9af83",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "platform"
+      }
+    ],
+    "headings": [
+      "从测量对象而不是品牌开始",
+      "一个跨越概率的简化推导",
+      "证据与输出逐项对应",
+      "怎样进行公平比较",
+      "参数改变的是证据，不只是速度",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案"
+    ]
+  },
+  {
+    "title": "祖源推断与混合群体模型",
+    "previous_body_characters": 596,
+    "body_characters": 2586,
+    "source_sha256": "7d9e4073e7980cb8c33f24b2df8780c6b7df440af0b4fdd22ba602519bac04f2",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "ancestry"
+      }
+    ],
+    "headings": [
+      "把一个成分模型读成概率",
+      "单点手算与不可识别性",
+      "K、初始化和交叉验证各回答什么",
+      "一次分析的输入到输出",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "秩检验符号检验与非参数方法",
+    "previous_body_characters": 981,
+    "body_characters": 2948,
+    "source_sha256": "5016e7ddd7de6855dfe32a62e6cfca49b0ec47d3d2e487dc150f0e49c063f426",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "rank-tests"
+      }
+    ],
+    "headings": [
+      "三种方法分别利用什么",
+      "手算U与概率优势",
+      "并列、零差和样本量",
+      "何时不宜把秩检验当默认替代",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "第二代测序原理与平台比较",
+    "previous_body_characters": 795,
+    "body_characters": 3159,
+    "source_sha256": "86de0a44e3978f1b1ea33bcd4ed84df44b93c50d421be7d5f50496cfeab98c07",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "coverage"
+      }
+    ],
+    "headings": [
+      "先学会比较同一个问题",
+      "共有流程及不同机制",
+      "手算平均深度为何不保证覆盖",
+      "双端不等于真正长读长",
+      "一个能落地的选择表",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "算法输入输出复杂度与数据结构",
+    "previous_body_characters": 746,
+    "body_characters": 2929,
+    "source_sha256": "b85061e648b9960548ef197885ed72934b433585756ce90bc70e12a99d338b11",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "complexity"
+      }
+    ],
+    "headings": [
+      "把生物问题变成计算任务",
+      "用增长速度理解复杂度",
+      "亲手计算内存与操作次数",
+      "正确性先于速度",
+      "运行异常时先查什么",
+      "自测与答案",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "系谱BLUP与单步ssGBLUP",
+    "previous_body_characters": 1102,
+    "body_characters": 2722,
+    "source_sha256": "cc712f6b413a9a9aa9cd31b782583abd87b8ee1619dea909720c40ebebca28dd",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "pedigree"
+      }
+    ],
+    "headings": [
+      "从父母到加性关系矩阵",
+      "PBLUP如何借用未测个体信息",
+      "单步关系H以及最常见的求逆错误",
+      "尺度、混合和大规模计算",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "线性模型与混合模型",
+    "previous_body_characters": 1127,
+    "body_characters": 2837,
+    "source_sha256": "d16089ed4133f2bb914f3ccf90998453a9d1bd0106a53c6d065109d5da3854e8",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "lmm"
+      }
+    ],
+    "headings": [
+      "从一个条件均值开始",
+      "混合模型添加的是哪种结构",
+      "100条记录为什么不是100份独立信息",
+      "在GWAS与GS中读同一个模型",
+      "从输入到结果的检查顺序",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "组学批次校正与信号保留",
+    "previous_body_characters": 777,
+    "body_characters": 2932,
+    "source_sha256": "e9e6e979f812598dad7121f7067bec3aace07d39accbe0904525f038153fb414",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "batch"
+      }
+    ],
+    "headings": [
+      "三项任务先分开",
+      "模型中哪些部分应保留",
+      "一个可手算的交叉例子",
+      "不同整合方法学到什么",
+      "怎样评价，而不追一张混匀的UMAP",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "组装比较共线性与变异方向",
+    "previous_body_characters": 528,
+    "body_characters": 2740,
+    "source_sha256": "5ad126a556d7a1ca901dc0888200b24216b442e3591584c5cf1d0f49d7f884a4",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "assembly"
+      }
+    ],
+    "headings": [
+      "输入是成套组装而非若干同名染色体",
+      "一个方向翻转的序列例",
+      "共线性与小变异的层级",
+      "工具的任务与表示边界",
+      "从比对参数到排错",
+      "结果该怎样保存",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "结构变异检测的读对分裂读段与组装",
+    "previous_body_characters": 741,
+    "body_characters": 3105,
+    "source_sha256": "fccf498404aea9f6658d381e5eedb5e58a4ecfe81e07ef19c9234abe77f0f697",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "sv-evidence"
+      }
+    ],
+    "headings": [
+      "从一个500bp缺失推演证据",
+      "每类证据能到哪一步",
+      "发现、聚类与分型分开看",
+      "数值例：支持比例与剂量不是一回事",
+      "已有实测与参数检查",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "罕见变异负荷检验与SKAT",
+    "previous_body_characters": 585,
+    "body_characters": 2816,
+    "source_sha256": "0f429fcb39984881053faf66d98b92d474e9e80069aea116d11c1f2bfebb3077",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "rare"
+      }
+    ],
+    "headings": [
+      "为什么把变异组成集合",
+      "负荷检验的方向假设",
+      "SKAT聚合的是得分平方",
+      "手算一次抵消",
+      "从集合定义到可报告结果",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "置换检验与Bootstrap实践",
+    "previous_body_characters": 1358,
+    "body_characters": 3151,
+    "source_sha256": "4238c3b3410f7f8d88b126487bfe4d0dcd04c7537355f86ab8975de1835f7c06",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "resampling"
+      }
+    ],
+    "headings": [
+      "先问哪些单位可以交换",
+      "六个数枚举20种分组",
+      "Bootstrap是另一种抽样世界",
+      "怎样决定重复次数与报告",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "群体历史共祖与有效群体大小推断",
+    "previous_body_characters": 781,
+    "body_characters": 2716,
+    "source_sha256": "610dc7eca8b9f4453b2ba3a60d75cbad93edfbf68320742c46a4eb6f2d0e82d1",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "history"
+      }
+    ],
+    "headings": [
+      "共祖不是向前模拟人口普查",
+      "从序列证据到曲线的流程",
+      "手算尺度：μ和g影响不同",
+      "参数与稳定性应该怎样看",
+      "何时应停止人口史叙事",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "群体结构与GWAS有什么关系",
+    "previous_body_characters": 613,
+    "body_characters": 2656,
+    "source_sha256": "ce51c620dac55e30019b5dbc77ae0231f56e1aa036b7a1fa3af2cb5161999737",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "structure"
+      }
+    ],
+    "headings": [
+      "从遗漏变量看假关联",
+      "八个样本的反例",
+      "PC和K控制的不是同一件事",
+      "从准备到诊断",
+      "什么时候改研究设计比换软件更重要",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "聚类Kmeans与层次聚类",
+    "previous_body_characters": 850,
+    "body_characters": 2937,
+    "source_sha256": "e7ec42d98f6fe25f7f4bc8b2a2fa70cc883ff0aa4077b72b88984b1826fb14e7",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "clustering"
+      }
+    ],
+    "headings": [
+      "K-means在优化什么",
+      "四个点做一次更新",
+      "层次聚类为什么依赖linkage",
+      "怎样评价与选择参数",
+      "异常诊断与自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "蛋白质鉴定FDR与差异丰度",
+    "previous_body_characters": 573,
+    "body_characters": 2876,
+    "source_sha256": "985524ee20d1aeeb1a6af85d3e4a1b9d37d6ecbdf784f788762d057175904d3b",
+    "cases": [
+      {
+        "script": "examples/methods_omics_demo.py",
+        "case": "proteomics"
+      }
+    ],
+    "headings": [
+      "两道统计关口",
+      "鉴定错误如何估计",
+      "从肽段强度到条件效应",
+      "差异层的多重校正另做",
+      "输出、参数与排错",
+      "自测与答案",
+      "在电脑上核对这一小步",
+      "来源与下一步"
+    ]
+  },
+  {
+    "title": "贝叶斯回归与核方法用于GS",
+    "previous_body_characters": 1011,
+    "body_characters": 2644,
+    "source_sha256": "a95116ad88809c800df98f4376ff4b9e36a9643b704f2029571c444b02708d77",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "bayes"
+      }
+    ],
+    "headings": [
+      "共同的回归骨架",
+      "一个能手算的后验",
+      "各模型对效应提出什么假设",
+      "从标记效应转向核",
+      "如何判断计算与预测可用",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "距离标准化与相似性",
+    "previous_body_characters": 739,
+    "body_characters": 2998,
+    "source_sha256": "bb2886f1439a0a02efad662f9d1c3d7dbad2659d5444030ce3f0e1a01c9cda00",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "distance"
+      }
+    ],
+    "headings": [
+      "三种常见比较回答不同问题",
+      "单位如何压倒真正想比较的信号",
+      "怎样决定是否标准化",
+      "缺失和高维带来的额外问题",
+      "症状、检查与自测",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "近邻朴素贝叶斯与决策树入门",
+    "previous_body_characters": 887,
+    "body_characters": 2910,
+    "source_sha256": "0f99944dc6ee14f093ec4502bbf36749bda026b51c52eaf88c592dd88b40f107",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "classifiers"
+      }
+    ],
+    "headings": [
+      "三个目标与决策过程",
+      "三个能核对的预测",
+      "参数如何影响实际结果",
+      "实操应怎样验证",
+      "自测与答案",
+      "接着读什么",
+      "运行本页的完整小例"
+    ]
+  },
+  {
+    "title": "选择扫描与中性替代解释",
+    "previous_body_characters": 582,
+    "body_characters": 2587,
+    "source_sha256": "18314826e280228708c8afcfcc8480f902cc2719ff6d73b3737776b601b65c47",
+    "cases": [
+      {
+        "script": "examples/methods_genetics_demo.py",
+        "case": "selection"
+      }
+    ],
+    "headings": [
+      "三类证据对应不同问题",
+      "Tajima D究竟在比较什么",
+      "一个正D与负D的手算对照",
+      "单倍型扫描要核对模式与符号",
+      "从候选到证据",
+      "动手：运行后先对照什么",
+      "排错：先定位原因再改参数",
+      "自测与答案",
+      "原有实践与延伸入口"
+    ]
+  },
+  {
+    "title": "隐马尔可夫模型与Viterbi解码",
+    "previous_body_characters": 0,
+    "body_characters": 3360,
+    "source_sha256": "d295577517e3ddbd8f1f30914d23a6a93008b0c7726917f061ace2a18c7d94af",
+    "cases": [
+      {
+        "script": "examples/methods_foundations_demo.py",
+        "case": "hmm"
+      }
+    ],
+    "headings": [
+      "模型的三个概率对象",
+      "求最大和求总和是两个问题",
+      "两状态三观测的完整核对",
+      "参数如何影响分段",
+      "排错与自测",
+      "运行本页的完整小例"
+    ]
+  }
+]

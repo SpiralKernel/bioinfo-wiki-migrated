@@ -6,6 +6,9 @@
 
 ## 从哪里开始
 
+- [方法与算法系统学习指南](wiki/方法与算法系统学习指南.md)：70篇方法按七条路线学习，含推导、算例、可执行代码、排错和自测。
+- [读懂方法公式的最小数学基础](wiki/读懂方法公式的最小数学基础.md)：先用一张表理解矩阵、对数和概率符号。
+
 - [变异注释与功能解释学习路线](wiki/变异注释与功能解释学习路线.md)：基因模型、转录本、后果提取和候选证据。
 - [生信缺口清单与维护优先级](wiki/生信缺口清单与维护优先级.md)：尚需补齐的真实数据和专业软件任务。
 - [全类型变异检测总览与证据地图](wiki/全类型变异检测总览与证据地图.md)：小变异、SV、CNV/PAV、STR/VNTR、TE和组装分支。
@@ -150,6 +153,24 @@ python3 examples/plot_sequencing_metrics.py
 ```
 
 输出在`examples/output/sequencing/`，重复运行覆盖同名文件。区间和分子身份是人工真值，没有运行比对或去重工具。PCR、建库、测序仪及外部质控软件页为原理和判读指南，尚未执行实验。范围与结果见[本轮测序记录](maintenance/sequencing-round1-2026-10-13.md)。
+
+## 方法与算法的配套练习
+
+原有66篇方法已逐篇深化，新增EM、HMM、BWT/FM索引和de Bruijn图；系统指南给出前置、共同基础与七条专题路线。教学结构参考GTN、Bioinformatics Workbook、SeqAn与Truvari Wiki，正文和人工例独立撰写。三套runner共70个方法算例，部分基础例需要NumPy/SciPy，其余只用标准库：
+
+```bash
+# 按前文建立.venv并安装requirements-teaching.txt，在项目根目录运行：
+.venv/bin/python examples/methods_foundations_demo.py --list
+.venv/bin/python examples/methods_foundations_demo.py --case pca --output examples/output/methods-pca
+python3 examples/methods_genetics_demo.py --list
+python3 examples/methods_genetics_demo.py --case gblup --output examples/output/methods-gblup
+python3 examples/methods_omics_demo.py --list
+python3 examples/methods_omics_demo.py --case pseudobulk --output examples/output/methods-pseudobulk
+# 两张自绘图：
+.venv/bin/python examples/plot_methods_foundations.py
+```
+
+Windows PowerShell使用`.venv\Scripts\python.exe`替换`.venv/bin/python`，系统Python命令也可使用已安装的`python`。运行目录需含README与examples。保存结果时拒绝覆盖非空目录，重复练习用新的--output；genetics不传--output只打印结果，omics默认按case写入其输出目录。不要把教学算术视为执行了REML、SKAT、真实组装或测序实验，专业范围逐页声明。结果、图、环境与双代理审阅见[本轮维护记录](maintenance/methods-depth-2026-10-26.md)。
 
 ## 在Obsidian编写并发布
 

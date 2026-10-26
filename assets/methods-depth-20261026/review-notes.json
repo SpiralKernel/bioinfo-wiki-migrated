@@ -1,0 +1,477 @@
+{
+  "date": "2026-10-26",
+  "reader_review": {
+    "role": "beginner readability and method depth",
+    "authored_pages": [
+      {
+        "title": "DNBSEQ测序与滚环扩增",
+        "case": "rca",
+        "sources": [
+          "https://us.global-mgitech.com/technologies/dnbseq-technology/"
+        ]
+      },
+      {
+        "title": "Illumina合成测序与簇信号",
+        "case": "illumina",
+        "sources": [
+          "https://www.illumina.com/science/technology/next-generation-sequencing/sequencing-technology.html"
+        ]
+      },
+      {
+        "title": "Nanopore测序与直接RNA",
+        "case": "nanopore",
+        "sources": [
+          "https://nanoporetech.com/platform/technology",
+          "https://software-docs.nanoporetech.com/dorado/latest/"
+        ]
+      },
+      {
+        "title": "PCR与扩增基础",
+        "case": "pcr",
+        "sources": [
+          "https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet",
+          "https://pubmed.ncbi.nlm.nih.gov/40272429/"
+        ]
+      },
+      {
+        "title": "PacBioSMRT与HiFi测序",
+        "case": "hifi",
+        "sources": [
+          "https://www.pacb.com/technology/hifi-sequencing/how-it-works/"
+        ]
+      },
+      {
+        "title": "Sanger测序原理与峰图判读",
+        "case": "sanger",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/271968/"
+        ]
+      },
+      {
+        "title": "半导体测序与同聚物信号",
+        "case": "ion",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/21776081/"
+        ]
+      },
+      {
+        "title": "第二代测序原理与平台比较",
+        "case": "coverage",
+        "sources": [
+          "https://www.illumina.com/science/technology/next-generation-sequencing/sequencing-technology.html",
+          "https://us.global-mgitech.com/technologies/dnbseq-technology/",
+          "https://pubmed.ncbi.nlm.nih.gov/21776081/"
+        ]
+      },
+      {
+        "title": "RNA交互作用与LRT比较",
+        "case": "interaction",
+        "sources": [
+          "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html"
+        ]
+      },
+      {
+        "title": "RNA计数模型差异表达与效应收缩",
+        "case": "rna",
+        "sources": [
+          "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+          "https://bioconductor.org/packages/release/bioc/vignettes/limma/inst/doc/usersguide.pdf"
+        ]
+      },
+      {
+        "title": "代谢组注释定量与多变量分析",
+        "case": "metabolomics",
+        "sources": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC3772505",
+          "https://doi.org/10.1007/s11306-007-0081-3"
+        ]
+      },
+      {
+        "title": "单细胞差异表达与差异丰度",
+        "case": "pseudobulk",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/34584091/"
+        ]
+      },
+      {
+        "title": "单细胞降维邻居图与聚类原理",
+        "case": "neighbors",
+        "sources": [
+          "https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering.html"
+        ]
+      },
+      {
+        "title": "多组学整合与潜变量模型",
+        "case": "multiomics",
+        "sources": [
+          "https://biofam.github.io/MOFA2/"
+        ]
+      },
+      {
+        "title": "富集分析与GSEA",
+        "case": "enrichment",
+        "sources": [
+          "https://www.geneontology.org/docs/go-enrichment-analysis/",
+          "https://docs.gsea-msigdb.org/GSEA/GSEA_User_Guide/"
+        ]
+      },
+      {
+        "title": "差异峰与差异甲基化方法",
+        "case": "epigenetics",
+        "sources": [
+          "https://bioconductor.org/packages/release/bioc/vignettes/DiffBind/inst/doc/DiffBind.pdf",
+          "https://bioconductor.org/packages/release/bioc/vignettes/DSS/inst/doc/DSS.html"
+        ]
+      },
+      {
+        "title": "微生物组组成差异与多样性方法",
+        "case": "microbiome",
+        "sources": [
+          "https://bioconductor.org/packages/release/bioc/vignettes/ANCOMBC/inst/doc/ANCOMBC2.html"
+        ]
+      },
+      {
+        "title": "组学批次校正与信号保留",
+        "case": "batch",
+        "sources": [
+          "https://portals.broadinstitute.org/harmony/",
+          "https://docs.scvi-tools.org/en/stable/tutorials/notebooks/quick_start/api_overview.html"
+        ]
+      },
+      {
+        "title": "蛋白质鉴定FDR与差异丰度",
+        "case": "proteomics",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/17327847/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC2922680/",
+          "https://bioconductor.org/packages/release/bioc/vignettes/MSstats/inst/doc/MSstats.html"
+        ]
+      },
+      {
+        "title": "CNV深度校正分段与拷贝数估计",
+        "case": "cnv",
+        "sources": [
+          "https://cnvkit.readthedocs.io/en/stable/pipeline.html",
+          "https://cnvkit.readthedocs.io/en/stable/calling.html"
+        ]
+      },
+      {
+        "title": "区间重叠最近基因与候选映射",
+        "case": "intervals",
+        "sources": [
+          "https://bedtools.readthedocs.io/en/latest/content/tools/closest.html"
+        ]
+      },
+      {
+        "title": "罕见变异负荷检验与SKAT",
+        "case": "rare",
+        "sources": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC3135811/"
+        ]
+      }
+    ],
+    "cross_review": {
+      "root_pages": [
+        "BLAST原理与种子延伸",
+        "PCA原理与实现",
+        "Smith-Waterman局部比对",
+        "t检验配对设计与Welch检验",
+        "似然最大似然与MAP估计",
+        "假设检验与双侧单侧选择",
+        "分类指标ROC与PR曲线",
+        "列联表卡方与Fisher精确检验",
+        "动态规划与序列比对基础",
+        "图与最短路径的生信入门",
+        "广义线性模型与逻辑回归",
+        "排序查找与哈希在生信中的应用",
+        "方差分析交互作用与对比",
+        "梯度下降与数值优化",
+        "正态性方差齐性与模型诊断",
+        "相关回归与混杂",
+        "秩检验符号检验与非参数方法",
+        "算法输入输出复杂度与数据结构",
+        "置换检验与Bootstrap实践",
+        "聚类Kmeans与层次聚类",
+        "距离标准化与相似性",
+        "近邻朴素贝叶斯与决策树入门"
+      ],
+      "new_pages": [
+        "EM算法与隐变量估计",
+        "隐马尔可夫模型与Viterbi解码",
+        "BWT与FM索引的精确匹配",
+        "deBruijn图与短读长组装原理"
+      ],
+      "other_pages": [
+        "读懂方法公式的最小数学基础",
+        "方法与算法系统学习指南"
+      ],
+      "status": "Read in full; identified clarity issues directly repaired; no new unresolved arithmetic blocker found",
+      "repairs": [
+        "Root22 common instructions: save temporary snippet scripts in project root and use the same environment interpreter, avoiding broken from examples imports.",
+        "GLM: log2 ambiguity replaced by natural ln(2); PCA: explain n, Sigma, transpose, @ and axis=0; Smith-Waterman: define sequence indices, score and gap.",
+        "Welch/paired and chi-square/Fisher numeric P checkpoints copied from existing root-snippets.json; code blocks unchanged.",
+        "Guide: separate first-time venv creation from existing environment; full PowerShell commands; direct standard-library genetics/omics examples; clarify --list, --case, --output and distinct JSON schemas.",
+        "HMM: explain that illustrative complete-path copying has extra time cost beyond optimized backpointer recurrence.",
+        "BWT: put dollar sentinel and transformed string in code formatting to prevent unintended math rendering.",
+        "Math bridge: dimensions, matrix multiplication and log definitions have checkable output; no substantive correction needed."
+      ]
+    },
+    "source_access_limits": [
+      "Several Nature full-text fetches returned authentication/redirect errors. Semiconductor, target-decoy and single-cell primary records were verified through PubMed/PMC; PacBio/Scanpy facts additionally through their official docs. Retained original links do not imply every historical source was freshly accessible.",
+      "No third-party tutorial text was copied; mathematical toy examples and explanations were newly authored."
+    ],
+    "self_test_design": {
+      "each_authored_page": "2–3 questions with explicit answers tied to an artificial numerical example; distinguish model/measurement/independent unit/implementation bounds",
+      "concrete_checks": [
+        "PCR copied molecules are not new samples",
+        "HiFi majority toy is not CCS accuracy",
+        "Poisson LRT toy lacks RNA dispersion/replicates",
+        "Pseudobulk weighting example is not a professional normalization method",
+        "Unweighted enrichment ES is not NES/FDR",
+        "Rare Q=8 is not an association P value",
+        "CNV relative depth is not automatically integer copy number"
+      ]
+    }
+  },
+  "technical_review": {
+    "result": "完成指定22篇扩写及其标准库案例验证；交叉技术审阅reader22篇和新增4篇，发现的两项公式/输入域说明已修正并定向复核，无剩余阻断性问题。",
+    "owned_pages": [
+      "FST与群体分化估计",
+      "FarmCPU与BLINK原理",
+      "GBLUP与rrBLUP原理及实现",
+      "GS中的REML混合模型方程与求解",
+      "LD衰减与遗传距离分析",
+      "亲缘近交与ROH分析",
+      "祖源推断与混合群体模型",
+      "系谱BLUP与单步ssGBLUP",
+      "线性模型与混合模型",
+      "群体历史共祖与有效群体大小推断",
+      "群体结构与GWAS有什么关系",
+      "选择扫描与中性替代解释",
+      "贝叶斯回归与核方法用于GS",
+      "小变异检测的似然与局部组装",
+      "结构变异检测的读对分裂读段与组装",
+      "SV事件匹配与一对一评估",
+      "SV合并匹配与群体再分型",
+      "变异评估真值集合与可检测区域",
+      "短读长与长读长变异证据比较",
+      "组装比较共线性与变异方向",
+      "数据泄漏与交叉验证",
+      "正则化过拟合与模型选择"
+    ],
+    "cross_review": {
+      "reader_pages": [
+        "DNBSEQ测序与滚环扩增",
+        "Illumina合成测序与簇信号",
+        "Nanopore测序与直接RNA",
+        "PCR与扩增基础",
+        "PacBioSMRT与HiFi测序",
+        "Sanger测序原理与峰图判读",
+        "半导体测序与同聚物信号",
+        "第二代测序原理与平台比较",
+        "RNA交互作用与LRT比较",
+        "RNA计数模型差异表达与效应收缩",
+        "代谢组注释定量与多变量分析",
+        "单细胞差异表达与差异丰度",
+        "单细胞降维邻居图与聚类原理",
+        "多组学整合与潜变量模型",
+        "富集分析与GSEA",
+        "差异峰与差异甲基化方法",
+        "微生物组组成差异与多样性方法",
+        "组学批次校正与信号保留",
+        "蛋白质鉴定FDR与差异丰度",
+        "CNV深度校正分段与拷贝数估计",
+        "区间重叠最近基因与候选映射",
+        "罕见变异负荷检验与SKAT"
+      ],
+      "new_algorithm_pages": [
+        "EM算法与隐变量估计",
+        "隐马尔可夫模型与Viterbi解码",
+        "BWT与FM索引的精确匹配",
+        "deBruijn图与短读长组装原理"
+      ],
+      "reader_validation": "只读检查22篇正文、数值检查点及methods_omics_demo.py源码；用runpy加载并独立调用其22个函数，全部断言通过，逐项打印并对照JSON键值；未覆盖其既有输出目录。",
+      "new_algorithm_validation": "只读检查EM/HMM/FM-index/DBG全文公式、数值、复杂度及专业范围。主代理已执行页面代码，本复核未重复运行。",
+      "findings": [
+        {
+          "severity": "P2",
+          "page": "单细胞降维邻居图与聚类原理",
+          "location": "模块度定义段，当前第29行",
+          "question": "“m为总边权的一半”是否会被读作把每条无向边只计一次的边权总和再减半？",
+          "evidence": "标准模块度中2m=sum_ij A_ij，m为无向边权各计一次的总和。NetworkX官方modularity说明明确这一点。",
+          "correction": "已改为对称邻接矩阵、k_i=sum_j A_ij、2m=sum_ij A_ij，并写清每条无向边在矩阵中计两次。",
+          "verification": "已读取最终段，定义与公式相容。",
+          "source": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.quality.modularity.html"
+        },
+        {
+          "severity": "P2",
+          "page": "微生物组组成差异与多样性方法",
+          "location": "多样性与距离段，当前第33行",
+          "question": "Bray–Curtis的“变换值”是否会被误用为前一段含负数的clr坐标？",
+          "evidence": "文中非绝对值分母的常用丰度式需要非负输入且分母非零。clr分量和为0，直接套此式会出现零分母。SciPy官方定义亦区分正输入的有界性质。",
+          "correction": "已限定非负丰度/保持非负的变换、分母非零；明确clr不能直接套该式，补充clr后的常见Aitchison/欧氏几何；Shannon数值改写ln(2)消除log2歧义。",
+          "verification": "已读取最终段，条件及例子1/6均正确。",
+          "source": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.braycurtis.html"
+        }
+      ],
+      "no_blockers_in": [
+        "NB方差与正态收缩示意",
+        "RNA交互四格Poisson LRT与专业RNA检验的区别",
+        "供体层pseudobulk与未采到类型不能直接填全零",
+        "蛋白鉴定D/T约定与分层FDR",
+        "CNV纯度混合信号与已知基线边界",
+        "SKAT权重平方约定、得分抵消与无专业P值声明",
+        "HMM最佳路径与总观测概率",
+        "EM固定方差约束及局部最优边界",
+        "FM索引半开Occ区间",
+        "DBG已知路径拼接而非真正解组装的声明"
+      ]
+    },
+    "sources_read_or_checked": [
+      {
+        "source": "FarmCPU原始论文",
+        "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005767",
+        "scope": "固定/随机模型迭代与背景标记思想"
+      },
+      {
+        "source": "BLINK原始研究/作者入口",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6365300/",
+        "scope": "检索结果/摘要与作者入口核对LD和BIC；未声称获取DOI站点全文"
+      },
+      {
+        "source": "rrBLUP作者文档",
+        "url": "https://rdrr.io/cran/rrBLUP/man/mixed.solve.html",
+        "scope": "ML/REML单随机项模型与矩阵条件"
+      },
+      {
+        "source": "PLINK2官方LD文档",
+        "url": "https://www.cog-genomics.org/plink/2.0/ld",
+        "scope": "r²与相位/剂量输入边界"
+      },
+      {
+        "source": "PLINK1.9官方IBD/ROH文档",
+        "url": "https://www.cog-genomics.org/plink/1.9/ibd",
+        "scope": "ROH参数与窗口/阈值解释"
+      },
+      {
+        "source": "BGLR作者文档",
+        "url": "https://github.com/gdlc/BGLR-R/blob/master/inst/md/hyperparameters.md",
+        "scope": "先验与超参数入口；未运行MCMC"
+      },
+      {
+        "source": "statsmodels官方混合模型文档",
+        "url": "https://www.statsmodels.org/stable/mixed_linear.html",
+        "scope": "固定/随机项及依赖结构"
+      },
+      {
+        "source": "PSMC作者源码与绘图换算",
+        "url": "https://github.com/lh3/psmc/blob/master/utils/psmc_plot.pl",
+        "scope": "每位点每代mu、N0、代长g与时间单位"
+      },
+      {
+        "source": "Sniffles作者仓库",
+        "url": "https://github.com/fritzsedlazeck/Sniffles",
+        "scope": "发现、SNF联合分型、force工作流；兼容问题另外核对本地2.8.1源码"
+      },
+      {
+        "source": "Truvari官方bench文档",
+        "url": "https://github.com/ACEnglish/truvari/wiki/bench",
+        "scope": "事件匹配、阈值、pick及评估输出"
+      },
+      {
+        "source": "GATK HaplotypeCaller官方文档",
+        "url": "https://gatk.broadinstitute.org/hc/en-us/articles/360037225632-HaplotypeCaller",
+        "scope": "活跃区域、局部组装、单倍型与基因型推断"
+      },
+      {
+        "source": "hap.py作者仓库",
+        "url": "https://github.com/Illumina/hap.py",
+        "scope": "真值/评估区域及小变异表示"
+      },
+      {
+        "source": "SyRI作者仓库",
+        "url": "https://github.com/schneebergerlab/syri",
+        "scope": "共线结构与重排，组装比较范围"
+      },
+      {
+        "source": "dipcall作者仓库",
+        "url": "https://github.com/lh3/dipcall",
+        "scope": "组装比较及可评估区域入口"
+      },
+      {
+        "source": "SVIM-asm作者仓库",
+        "url": "https://github.com/eldariont/svim-asm",
+        "scope": "组装间结构变异与单倍型输入"
+      },
+      {
+        "source": "scikit-learn官方通用陷阱",
+        "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+        "scope": "训练范围预处理及数据泄漏"
+      },
+      {
+        "source": "scikit-learn官方交叉验证",
+        "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+        "scope": "划分单位、分组与时间"
+      },
+      {
+        "source": "scikit-learn官方线性模型",
+        "url": "https://scikit-learn.org/stable/modules/linear_model.html",
+        "scope": "Ridge/LASSO损失约定与参数"
+      },
+      {
+        "source": "DESeq2作者教程",
+        "url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+        "scope": "交互/LRT、NB模型、收缩与计数输入边界"
+      },
+      {
+        "source": "Scanpy官方Leiden接口",
+        "url": "https://scanpy.readthedocs.io/en/stable/generated/scanpy.tl.leiden.html",
+        "scope": "图、分辨率、目标函数实现选择"
+      },
+      {
+        "source": "NetworkX官方模块度",
+        "url": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.quality.modularity.html",
+        "scope": "模块度m的无向图计数定义"
+      },
+      {
+        "source": "SciPy官方Bray–Curtis",
+        "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.braycurtis.html",
+        "scope": "非负丰度输入域与公式比较"
+      },
+      {
+        "source": "hmmlearn官方教程",
+        "url": "https://hmmlearn.readthedocs.io/en/stable/tutorial.html",
+        "scope": "HMM三项任务、Viterbi/前向/EM区别"
+      },
+      {
+        "source": "scikit-learn官方混合模型",
+        "url": "https://scikit-learn.org/stable/modules/mixture.html",
+        "scope": "EM、初始化、协方差奇异与组分选择"
+      },
+      {
+        "source": "Langmead作者FM-index讲义",
+        "url": "https://www.cs.jhu.edu/~langmea/resources/bwt_fm.pdf",
+        "scope": "终止符、SA/BWT、LF/反向搜索约定"
+      },
+      {
+        "source": "Velvet作者仓库",
+        "url": "https://github.com/dzerbino/velvet",
+        "scope": "de Bruijn组装的图表示及真实工具入口"
+      }
+    ],
+    "source_access_limits": [
+      "Bhatia FST PMC全文遇验证码，GenomeResearch全文入口失败；保留文献并按标准Hudson公式独立推导数值，不声称本轮重读全文。",
+      "部分VanRaden、ssGBLUP PubMed/DOI入口只返回元数据或失败；页面公式由矩阵恒等式和作者软件文档交叉推导，未伪称已获取全部原文。",
+      "页面保留的旧外链不等同于本轮每个链接均重新抓取成功。"
+    ],
+    "professional_scope": [
+      "新增methods_genetics_demo.py仅为标准库人工算术，不是REML优化器、FarmCPU/BLINK、ADMIXTURE、GS生产实现、选择检验器或变异调用器。",
+      "本轮未新跑真实人群、真实组学或湿实验；reader的22模式也是人工算术，不能据此宣称真实方法性能。",
+      "已验证Sniffles2.8.1/minimap2/Truvari5.5.0人工SV案例的链接、确切两事件范围继续保留；其真实软件链路并非真实性能基准。",
+      "Sniffles2.8.1 force的GQ0、SNF群体R01缺失及INFO可能继承候选边界继续保留；窄兼容补PS/表头改名不是通用VCF修复。",
+      "原有真实专业案例（如airway DESeq2、TRGT官方小fixture）保留独立验证范围，本轮不抹掉或扩张其结论。"
+    ]
+  },
+  "parent_resolution": "Both reviewers completed; identified wording/definition/checkpoint issues resolved; 70 runner cases and separate math primer executed; no remaining blocking review issue",
+  "note": "Review describes the recorded scope, not real-data method performance or a human approval"
+}

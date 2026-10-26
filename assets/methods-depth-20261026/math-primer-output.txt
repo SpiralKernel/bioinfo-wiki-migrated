@@ -1,0 +1,5 @@
+shapes (3, 2) (2, 3) (2, 2)
+coefficients [1. 2.]
+prediction [3. 5. 7.]
+variance 1.0
+logs 3.0 2.0

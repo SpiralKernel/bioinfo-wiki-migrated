@@ -1,0 +1,11 @@
+{
+  "scientific_python": "3.11.17",
+  "standard_library_python": "3.14.8",
+  "platform": "linux",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  },
+  "note": "Existing isolated Linux environment reused; no fresh cross-platform installation claimed"
+}

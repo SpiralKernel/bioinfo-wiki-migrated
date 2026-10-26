@@ -1,0 +1,20 @@
+[
+  {
+    "script": "examples/methods_foundations_demo.py",
+    "nonempty_rejected": true,
+    "summary_unchanged": true,
+    "case_list_count": 26
+  },
+  {
+    "script": "examples/methods_genetics_demo.py",
+    "nonempty_rejected": true,
+    "summary_unchanged": true,
+    "case_list_count": 22
+  },
+  {
+    "script": "examples/methods_omics_demo.py",
+    "nonempty_rejected": true,
+    "summary_unchanged": true,
+    "case_list_count": 22
+  }
+]

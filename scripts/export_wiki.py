@@ -186,6 +186,7 @@ def export(source, output, refresh_index=False):
             '面向入门学生，按研究问题查概念、理解算法、选择流程并完成实践。', '',
             '## 建议从这里开始', '',
             f'- [中文生信学习地图]({page_url("中文生信学习地图")})：了解前置知识和阅读顺序。',
+            f'- [方法与算法系统学习指南]({page_url("方法与算法系统学习指南")})：按七条路线理解原理、手算、动手核对和排错。',
             f'- [全类型变异检测总览与证据地图]({page_url("全类型变异检测总览与证据地图")})：按输入、平台、倍性和类型选择检测分支。',
             f'- [变异检测分型与提取学习路线]({page_url("变异检测分型与提取学习路线")})：小变异、SV、CNV/PAV、重复及按类型/区域/样本提取。',
             f'- [变异注释与功能解释学习路线]({page_url("变异注释与功能解释学习路线")})：基因模型、后果提取和候选证据。',
@@ -224,6 +225,8 @@ def export(source, output, refresh_index=False):
     home = [line for line in home if not line.startswith('- [') or
             any(page_url(name) in line for name in names | {INDEX})]
     sidebar = [f'[首页]({page_url("Home")}) · [关键词索引]({page_url(INDEX)})', '']
+    if "方法与算法系统学习指南" in names:
+        sidebar += [f'[方法系统学习]({page_url("方法与算法系统学习指南")})', ""]
     for folder in FOLDERS:
         subset = [r for r in records if r['folder'] == folder]
         home += [f'## {folder}（{len(subset)}）', '']

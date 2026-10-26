@@ -1,0 +1,211 @@
+{
+  "blast": {
+    "page": "BLAST原理与种子延伸",
+    "function": "case_blast",
+    "blocks": 1,
+    "code_sha256": [
+      "eb1ce7da84d1747431a1357138e8165b7f18e6fbb23d9c1ccfadce0e4965fda6"
+    ]
+  },
+  "pca": {
+    "page": "PCA原理与实现",
+    "function": "case_pca",
+    "blocks": 1,
+    "code_sha256": [
+      "7f14bab8ac0ef32a3f327cf4e829d7b659b8466a72c2b8c8e858b5454cbf7946"
+    ]
+  },
+  "smith-waterman": {
+    "page": "Smith-Waterman局部比对",
+    "function": "case_smith_waterman",
+    "blocks": 1,
+    "code_sha256": [
+      "31fcca4069a5aaeac0294bf1e8c774133b88ec357184966210378c14126bd54a"
+    ]
+  },
+  "t-tests": {
+    "page": "t检验配对设计与Welch检验",
+    "function": "case_t_tests",
+    "blocks": 1,
+    "code_sha256": [
+      "78cfe23feb245efae95d3c20c1542eb2703e391a4a947a32e3316bc68360cb68"
+    ]
+  },
+  "mle-map": {
+    "page": "似然最大似然与MAP估计",
+    "function": "case_mle_map",
+    "blocks": 1,
+    "code_sha256": [
+      "8c4855f5b5343de121b746b2edf3f5e63a323a04a1ccc11cc34f85ceb62c4c0b"
+    ]
+  },
+  "hypothesis": {
+    "page": "假设检验与双侧单侧选择",
+    "function": "case_hypothesis",
+    "blocks": 1,
+    "code_sha256": [
+      "e8ac01f289ead4ddd84074e9359b97939448e41b840e4649f42911d63b0c0dd7"
+    ]
+  },
+  "classification": {
+    "page": "分类指标ROC与PR曲线",
+    "function": "case_classification",
+    "blocks": 1,
+    "code_sha256": [
+      "6efeccd4f106185c982a514ae0fc1db8b08732dfd2a9fadff8a16386bd8dad32"
+    ]
+  },
+  "contingency": {
+    "page": "列联表卡方与Fisher精确检验",
+    "function": "case_contingency",
+    "blocks": 1,
+    "code_sha256": [
+      "c204aa41c35e7b74ff91cac7000b45caddc4466cdb0fde196b012806f4340f3c"
+    ]
+  },
+  "global-alignment": {
+    "page": "动态规划与序列比对基础",
+    "function": "case_global_alignment",
+    "blocks": 1,
+    "code_sha256": [
+      "f313610bbcc533432f3e20d868dc8a2b3015a3c6125210878e0724d547d92634"
+    ]
+  },
+  "bfs": {
+    "page": "图与最短路径的生信入门",
+    "function": "case_bfs",
+    "blocks": 1,
+    "code_sha256": [
+      "5799ebfb8064f3f4065495e2ccec4667464aa6a6379aad0dacaa02e9302ee9b6"
+    ]
+  },
+  "glm": {
+    "page": "广义线性模型与逻辑回归",
+    "function": "case_glm",
+    "blocks": 1,
+    "code_sha256": [
+      "babb4fa3f2f4d8a55e2144452a56facf09d1f3ca083838de834ca0b8c9df922d"
+    ]
+  },
+  "search-hash": {
+    "page": "排序查找与哈希在生信中的应用",
+    "function": "case_search_hash",
+    "blocks": 1,
+    "code_sha256": [
+      "ca1d3b8ae2b3ea269a283d99a82e15165277a8137b6b41d6799dfd1c122f9bc4"
+    ]
+  },
+  "anova": {
+    "page": "方差分析交互作用与对比",
+    "function": "case_anova",
+    "blocks": 1,
+    "code_sha256": [
+      "18b09aa1d08cdc6715672deee35c3266cf97a524b67b0d6568544facf2de1113"
+    ]
+  },
+  "gradient": {
+    "page": "梯度下降与数值优化",
+    "function": "case_gradient",
+    "blocks": 1,
+    "code_sha256": [
+      "5f4a26421832a2094b7371811b83e6d362584afe87359ca32ee2da62047235f0"
+    ]
+  },
+  "diagnostics": {
+    "page": "正态性方差齐性与模型诊断",
+    "function": "case_diagnostics",
+    "blocks": 1,
+    "code_sha256": [
+      "d1cc0f9e4e38abc979c309aee482cc9d3dea8f5a8042e609be6ef9c316e8ad35"
+    ]
+  },
+  "confounding": {
+    "page": "相关回归与混杂",
+    "function": "case_confounding",
+    "blocks": 1,
+    "code_sha256": [
+      "15ebedd3533af7e7d6766c0ea50432cc526331b28caeebacb5a51763d693e5a0"
+    ]
+  },
+  "rank-tests": {
+    "page": "秩检验符号检验与非参数方法",
+    "function": "case_rank_tests",
+    "blocks": 1,
+    "code_sha256": [
+      "fabaa9ddf10f717bcde2a7f806cc8368d6fc93988c20aa28b366359694448343"
+    ]
+  },
+  "complexity": {
+    "page": "算法输入输出复杂度与数据结构",
+    "function": "case_complexity",
+    "blocks": 1,
+    "code_sha256": [
+      "2520b02b5e76296682707226fcb05c14691c19c0e971c9327a3488ccc6635734"
+    ]
+  },
+  "resampling": {
+    "page": "置换检验与Bootstrap实践",
+    "function": "case_resampling",
+    "blocks": 2,
+    "code_sha256": [
+      "56e023c57a5bc08be5d94e19b9f921ef9e84f05c2816a4986cb0532f6c9ccfdc",
+      "909949de27c4962d8c0ae51ce26b27796f834d55ead1a39e8ef8c60ee141cc97"
+    ]
+  },
+  "clustering": {
+    "page": "聚类Kmeans与层次聚类",
+    "function": "case_clustering",
+    "blocks": 1,
+    "code_sha256": [
+      "b28c2fdcd631aa3516cd4a8f424c6777d91bcd5dd6964d346bf0a199ff3a252c"
+    ]
+  },
+  "distance": {
+    "page": "距离标准化与相似性",
+    "function": "case_distance",
+    "blocks": 1,
+    "code_sha256": [
+      "6398b28a47262ee5554679c56d2b5e0fe7412706b01f33b388de83b24ea85828"
+    ]
+  },
+  "classifiers": {
+    "page": "近邻朴素贝叶斯与决策树入门",
+    "function": "case_classifiers",
+    "blocks": 1,
+    "code_sha256": [
+      "d2349023c28df1cd2309879f99d32db118baf26016a19ea3df87911772d792f3"
+    ]
+  },
+  "em": {
+    "page": "EM算法与隐变量估计",
+    "function": "case_em",
+    "blocks": 1,
+    "code_sha256": [
+      "a6ac2320cfc46b77c005c6a1450d4347c94519d73bae124edff8cbdc245fc5ef"
+    ]
+  },
+  "hmm": {
+    "page": "隐马尔可夫模型与Viterbi解码",
+    "function": "case_hmm",
+    "blocks": 1,
+    "code_sha256": [
+      "ed30f30d67478b78dc09bf9415ad1a8a9bc0b96fb30f7460ecd02494312d3a0c"
+    ]
+  },
+  "fm-index": {
+    "page": "BWT与FM索引的精确匹配",
+    "function": "case_fm_index",
+    "blocks": 1,
+    "code_sha256": [
+      "d06f6e513496c4d9a4051e1442719664fbfff8a671751253f55b9fe8bdbca398"
+    ]
+  },
+  "debruijn": {
+    "page": "deBruijn图与短读长组装原理",
+    "function": "case_debruijn",
+    "blocks": 1,
+    "code_sha256": [
+      "d4d60617eaa1ed4b6cd7092dc664632d31e10e9d0dd6771f3372575db838d2a6"
+    ]
+  }
+}

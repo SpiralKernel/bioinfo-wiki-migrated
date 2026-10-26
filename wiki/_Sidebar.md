@@ -1,5 +1,7 @@
 [首页](https://github.com/SpiralKernel/bioinfo-wiki/wiki/Home) · [关键词索引](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%B3%E9%94%AE%E8%AF%8D%E7%B4%A2%E5%BC%95)
 
+[方法系统学习](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%96%B9%E6%B3%95%E4%B8%8E%E7%AE%97%E6%B3%95%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97)
+
 ### 学习路线
 
 - [GS算法软件与实践路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GS%E7%AE%97%E6%B3%95%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%AE%9E%E8%B7%B5%E8%B7%AF%E7%BA%BF)
@@ -10,6 +12,7 @@
 - [全类型变异检测总览与证据地图](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%A8%E7%B1%BB%E5%9E%8B%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E6%80%BB%E8%A7%88%E4%B8%8E%E8%AF%81%E6%8D%AE%E5%9C%B0%E5%9B%BE)
 - [变异检测分型与提取学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E5%88%86%E5%9E%8B%E4%B8%8E%E6%8F%90%E5%8F%96%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)
 - [变异注释与功能解释学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8F%98%E5%BC%82%E6%B3%A8%E9%87%8A%E4%B8%8E%E5%8A%9F%E8%83%BD%E8%A7%A3%E9%87%8A%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)
+- [方法与算法系统学习指南](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%96%B9%E6%B3%95%E4%B8%8E%E7%AE%97%E6%B3%95%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97)
 - [测序技术与PCR学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%B5%8B%E5%BA%8F%E6%8A%80%E6%9C%AF%E4%B8%8EPCR%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)
 - [生信基础算法学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%94%9F%E4%BF%A1%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)
 - [生信缺口清单与维护优先级](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%94%9F%E4%BF%A1%E7%BC%BA%E5%8F%A3%E6%B8%85%E5%8D%95%E4%B8%8E%E7%BB%B4%E6%8A%A4%E4%BC%98%E5%85%88%E7%BA%A7)
@@ -95,6 +98,7 @@
 - [群体结构是什么](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BE%A4%E4%BD%93%E7%BB%93%E6%9E%84%E6%98%AF%E4%BB%80%E4%B9%88)
 - [育种值GEBV准确度与可靠度](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%82%B2%E7%A7%8D%E5%80%BCGEBV%E5%87%86%E7%A1%AE%E5%BA%A6%E4%B8%8E%E5%8F%AF%E9%9D%A0%E5%BA%A6)
 - [计数丰度与标准化](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%AE%A1%E6%95%B0%E4%B8%B0%E5%BA%A6%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96)
+- [读懂方法公式的最小数学基础](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%AF%BB%E6%87%82%E6%96%B9%E6%B3%95%E5%85%AC%E5%BC%8F%E7%9A%84%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80)
 - [负二项离散度与均值方差](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%B4%9F%E4%BA%8C%E9%A1%B9%E7%A6%BB%E6%95%A3%E5%BA%A6%E4%B8%8E%E5%9D%87%E5%80%BC%E6%96%B9%E5%B7%AE)
 - [转录本选择与代表注释](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%BD%AC%E5%BD%95%E6%9C%AC%E9%80%89%E6%8B%A9%E4%B8%8E%E4%BB%A3%E8%A1%A8%E6%B3%A8%E9%87%8A)
 - [连锁不平衡与LD剪枝](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%BF%9E%E9%94%81%E4%B8%8D%E5%B9%B3%E8%A1%A1%E4%B8%8ELD%E5%89%AA%E6%9E%9D)
@@ -107,8 +111,10 @@
 ### 方法与算法
 
 - [BLAST原理与种子延伸](https://github.com/SpiralKernel/bioinfo-wiki/wiki/BLAST%E5%8E%9F%E7%90%86%E4%B8%8E%E7%A7%8D%E5%AD%90%E5%BB%B6%E4%BC%B8)
+- [BWT与FM索引的精确匹配](https://github.com/SpiralKernel/bioinfo-wiki/wiki/BWT%E4%B8%8EFM%E7%B4%A2%E5%BC%95%E7%9A%84%E7%B2%BE%E7%A1%AE%E5%8C%B9%E9%85%8D)
 - [CNV深度校正分段与拷贝数估计](https://github.com/SpiralKernel/bioinfo-wiki/wiki/CNV%E6%B7%B1%E5%BA%A6%E6%A0%A1%E6%AD%A3%E5%88%86%E6%AE%B5%E4%B8%8E%E6%8B%B7%E8%B4%9D%E6%95%B0%E4%BC%B0%E8%AE%A1)
 - [DNBSEQ测序与滚环扩增](https://github.com/SpiralKernel/bioinfo-wiki/wiki/DNBSEQ%E6%B5%8B%E5%BA%8F%E4%B8%8E%E6%BB%9A%E7%8E%AF%E6%89%A9%E5%A2%9E)
+- [EM算法与隐变量估计](https://github.com/SpiralKernel/bioinfo-wiki/wiki/EM%E7%AE%97%E6%B3%95%E4%B8%8E%E9%9A%90%E5%8F%98%E9%87%8F%E4%BC%B0%E8%AE%A1)
 - [FST与群体分化估计](https://github.com/SpiralKernel/bioinfo-wiki/wiki/FST%E4%B8%8E%E7%BE%A4%E4%BD%93%E5%88%86%E5%8C%96%E4%BC%B0%E8%AE%A1)
 - [FarmCPU与BLINK原理](https://github.com/SpiralKernel/bioinfo-wiki/wiki/FarmCPU%E4%B8%8EBLINK%E5%8E%9F%E7%90%86)
 - [GBLUP与rrBLUP原理及实现](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GBLUP%E4%B8%8ErrBLUP%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0)
@@ -125,6 +131,7 @@
 - [SV合并匹配与群体再分型](https://github.com/SpiralKernel/bioinfo-wiki/wiki/SV%E5%90%88%E5%B9%B6%E5%8C%B9%E9%85%8D%E4%B8%8E%E7%BE%A4%E4%BD%93%E5%86%8D%E5%88%86%E5%9E%8B)
 - [Sanger测序原理与峰图判读](https://github.com/SpiralKernel/bioinfo-wiki/wiki/Sanger%E6%B5%8B%E5%BA%8F%E5%8E%9F%E7%90%86%E4%B8%8E%E5%B3%B0%E5%9B%BE%E5%88%A4%E8%AF%BB)
 - [Smith-Waterman局部比对](https://github.com/SpiralKernel/bioinfo-wiki/wiki/Smith-Waterman%E5%B1%80%E9%83%A8%E6%AF%94%E5%AF%B9)
+- [deBruijn图与短读长组装原理](https://github.com/SpiralKernel/bioinfo-wiki/wiki/deBruijn%E5%9B%BE%E4%B8%8E%E7%9F%AD%E8%AF%BB%E9%95%BF%E7%BB%84%E8%A3%85%E5%8E%9F%E7%90%86)
 - [t检验配对设计与Welch检验](https://github.com/SpiralKernel/bioinfo-wiki/wiki/t%E6%A3%80%E9%AA%8C%E9%85%8D%E5%AF%B9%E8%AE%BE%E8%AE%A1%E4%B8%8EWelch%E6%A3%80%E9%AA%8C)
 - [亲缘近交与ROH分析](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%BA%B2%E7%BC%98%E8%BF%91%E4%BA%A4%E4%B8%8EROH%E5%88%86%E6%9E%90)
 - [代谢组注释定量与多变量分析](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%BB%A3%E8%B0%A2%E7%BB%84%E6%B3%A8%E9%87%8A%E5%AE%9A%E9%87%8F%E4%B8%8E%E5%A4%9A%E5%8F%98%E9%87%8F%E5%88%86%E6%9E%90)
@@ -172,6 +179,7 @@
 - [距离标准化与相似性](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%B7%9D%E7%A6%BB%E6%A0%87%E5%87%86%E5%8C%96%E4%B8%8E%E7%9B%B8%E4%BC%BC%E6%80%A7)
 - [近邻朴素贝叶斯与决策树入门](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%BF%91%E9%82%BB%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%B8%8E%E5%86%B3%E7%AD%96%E6%A0%91%E5%85%A5%E9%97%A8)
 - [选择扫描与中性替代解释](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E9%80%89%E6%8B%A9%E6%89%AB%E6%8F%8F%E4%B8%8E%E4%B8%AD%E6%80%A7%E6%9B%BF%E4%BB%A3%E8%A7%A3%E9%87%8A)
+- [隐马尔可夫模型与Viterbi解码](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E9%9A%90%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E6%A8%A1%E5%9E%8B%E4%B8%8EViterbi%E8%A7%A3%E7%A0%81)
 
 ### 工具
 

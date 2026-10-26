@@ -1,0 +1,527 @@
+{
+  "python": "3.14.8",
+  "scope": "Artificial standard-library arithmetic only",
+  "cases": {
+    "rca": {
+      "original_circles": 4,
+      "repeats_per_DNB": 100,
+      "total_template_repeats": 400,
+      "original_allele_counts": {
+        "A": 3,
+        "G": 1
+      },
+      "allele_fraction_G": 0.25,
+      "after_library_bias": {
+        "A": 6,
+        "G": 1
+      },
+      "biased_fraction_G": 0.14285714285714285
+    },
+    "illumina": {
+      "phasing_fraction": 0.01,
+      "cycles": 100,
+      "synchronous_fraction": 0.3660323412732292,
+      "error_Q20": 0.01,
+      "error_Q30": 0.001,
+      "expected_errors_150bp_Q30": 0.15
+    },
+    "nanopore": {
+      "observed": [
+        10.2,
+        14.8,
+        20.1
+      ],
+      "candidate_squared_error": {
+        "AACG": 0.08999999999999972,
+        "AAAC": 49.090000000000025
+      },
+      "chosen": "AACG",
+      "note": "Toy 2-mer regression; no real current or trained ONT model"
+    },
+    "pcr": {
+      "start": 10,
+      "cycles": 10,
+      "ideal": 10240,
+      "efficiency_0_8": 3570.467226624001,
+      "relative_bias_after_20_cycles": 2.948641115482299
+    },
+    "hifi": {
+      "independent_binary_error": 0.1,
+      "passes": 5,
+      "majority_error": 0.008560000000000002,
+      "original_molecules": 1,
+      "note": "Binary independent-error illustration, not CCS algorithm or HiFi accuracy"
+    },
+    "sanger": {
+      "reference": "ACGTTACG",
+      "deletion_allele": "ACGTACG",
+      "aligned_by_read_index": [
+        {
+          "position": 1,
+          "ref": "A",
+          "other": "A",
+          "mixed": false
+        },
+        {
+          "position": 2,
+          "ref": "C",
+          "other": "C",
+          "mixed": false
+        },
+        {
+          "position": 3,
+          "ref": "G",
+          "other": "G",
+          "mixed": false
+        },
+        {
+          "position": 4,
+          "ref": "T",
+          "other": "T",
+          "mixed": false
+        },
+        {
+          "position": 5,
+          "ref": "T",
+          "other": "A",
+          "mixed": true
+        },
+        {
+          "position": 6,
+          "ref": "A",
+          "other": "C",
+          "mixed": true
+        },
+        {
+          "position": 7,
+          "ref": "C",
+          "other": "G",
+          "mixed": true
+        }
+      ],
+      "reverse_complement": "CGTAACGT",
+      "note": "Base-index mixture illustration, no AB1 or quantitative peak model"
+    },
+    "ion": {
+      "artificial_flow_signal": 2.6,
+      "sigma": 0.4,
+      "normalized_two_candidate_likelihood": {
+        "2": 0.3486451353339456,
+        "3": 0.6513548646660544
+      },
+      "note": "Linear Gaussian two-candidate toy; not instrument calibration"
+    },
+    "coverage": {
+      "reads": 1000,
+      "read_length": 100,
+      "genome_length": 100000,
+      "mean_depth": 1.0,
+      "poisson_zero_probability": 0.36787944117144233,
+      "paired_150_fragment_250_unique_span": 250,
+      "paired_150_sequenced_bases": 300
+    },
+    "interaction": {
+      "cell_counts": [
+        [
+          10,
+          20
+        ],
+        [
+          20,
+          80
+        ]
+      ],
+      "ratio_of_ratios": 2.0,
+      "interaction_log2": 1.0,
+      "reduced_expected": [
+        [
+          6.923076923076923,
+          23.076923076923077
+        ],
+        [
+          23.076923076923077,
+          76.92307692307692
+        ]
+      ],
+      "poisson_deviance": 2.1817422157774953,
+      "note": "Poisson illustration without dispersion/replicates; no RNA P value"
+    },
+    "rna": {
+      "counts": [
+        20,
+        40,
+        80,
+        160
+      ],
+      "known_size_factors": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "normalized": [
+        20.0,
+        20.0,
+        80.0,
+        80.0
+      ],
+      "normalized_log2_fold_change": 2.0,
+      "NB_mean": 100,
+      "NB_alpha": 0.1,
+      "NB_variance": 1100.0,
+      "normal_prior_toy": {
+        "beta": 3.0,
+        "se": 2.0,
+        "tau": 1.0,
+        "posterior_mean": 0.6
+      }
+    },
+    "metabolomics": {
+      "feature_sample_values": [
+        [
+          1000,
+          2000,
+          3000
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "sample_variances": [
+        1000000,
+        1
+      ],
+      "standardized_sample_variances": [
+        1.0,
+        1.0
+      ],
+      "fold_change_raw": 2.0,
+      "log2_fold_change": 1.0,
+      "note": "Scaling arithmetic only; no metabolite identification/PCA/PLS fit"
+    },
+    "pseudobulk": {
+      "groups": {
+        "A": {
+          "donors": 2,
+          "cells": 110,
+          "donor_equal_mean": 5.0,
+          "cell_weighted_mean": 1.7272727272727273
+        },
+        "B": {
+          "donors": 2,
+          "cells": 110,
+          "donor_equal_mean": 5.0,
+          "cell_weighted_mean": 4.181818181818182
+        }
+      },
+      "note": "Unequal weighting example, not pseudobulk normalization or DE test"
+    },
+    "neighbors": {
+      "coordinates": [
+        0.0,
+        0.1,
+        3.0,
+        3.1
+      ],
+      "k1_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "k2_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "note": "Symmetrized unweighted kNN toy, not Scanpy fuzzy graph/Leiden/UMAP"
+    },
+    "multiomics": {
+      "factor": [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "loadings": [
+        2.0,
+        -3.0
+      ],
+      "reconstructed": [
+        [
+          -2.0,
+          3.0
+        ],
+        [
+          0.0,
+          -0.0
+        ],
+        [
+          2.0,
+          -3.0
+        ]
+      ],
+      "sign_flip_same_reconstruction": true,
+      "block_trace_before_weighting": {
+        "RNA_100_features": 100,
+        "protein_2_features": 2
+      },
+      "note": "Exact rank-one illustration, no MOFA/DIABLO fit"
+    },
+    "enrichment": {
+      "ORA": {
+        "N": 20,
+        "K": 5,
+        "n": 4,
+        "k": 3,
+        "upper_tail_p": 0.03199174406604747
+      },
+      "unweighted_running_score": [
+        0.3333333333333333,
+        0.6666666666666666,
+        0.4666666666666666,
+        0.2666666666666666,
+        0.0666666666666666,
+        0.3999999999999999,
+        0.1999999999999999,
+        -1.1102230246251565e-16
+      ],
+      "positive_ES": 0.6666666666666666,
+      "note": "ORA exact arithmetic/unweighted running score; no GSEA NES/FDR"
+    },
+    "epigenetics": {
+      "peak_counts": [
+        20,
+        40
+      ],
+      "library_factors": [
+        1,
+        2
+      ],
+      "normalized_counts": [
+        20.0,
+        20.0
+      ],
+      "methylation": [
+        {
+          "methylated": 2,
+          "total": 4,
+          "fraction": 0.5,
+          "binomial_SE": 0.25
+        },
+        {
+          "methylated": 50,
+          "total": 100,
+          "fraction": 0.5,
+          "binomial_SE": 0.05
+        }
+      ],
+      "note": "Independent binomial SE illustration; no biological overdispersion or DMR fit"
+    },
+    "microbiome": {
+      "absolute_A": [
+        10,
+        10
+      ],
+      "absolute_B": [
+        20,
+        10
+      ],
+      "relative_A": [
+        0.5,
+        0.5
+      ],
+      "relative_B": [
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "taxon2_relative_fold_change": 0.6666666666666666,
+      "clr_A": [
+        0.0,
+        0.0
+      ],
+      "clr_B": [
+        0.34657359027997264,
+        -0.3465735902799727
+      ],
+      "Bray_Curtis_relative": 0.16666666666666666,
+      "Shannon_A": 0.6931471805599453,
+      "note": "No absolute-abundance inference from sequencing counts alone"
+    },
+    "batch": {
+      "crossed_rows": [
+        {
+          "batch": "b1",
+          "group": "A",
+          "value": 1
+        },
+        {
+          "batch": "b1",
+          "group": "B",
+          "value": 3
+        },
+        {
+          "batch": "b2",
+          "group": "A",
+          "value": 11
+        },
+        {
+          "batch": "b2",
+          "group": "B",
+          "value": 13
+        }
+      ],
+      "corrected": [
+        1,
+        3,
+        1,
+        3
+      ],
+      "group_difference_preserved": 2,
+      "confounded_design_columns_equal": true,
+      "note": "Known additive shift; no Harmony/scVI or learned batch effect"
+    },
+    "proteomics": {
+      "target_hits": 100,
+      "decoy_hits": 2,
+      "illustrative_decoy_over_target": 0.02,
+      "raw_p": [
+        0.001,
+        0.01,
+        0.04,
+        0.2
+      ],
+      "BH": [
+        0.004,
+        0.02,
+        0.05333333333333334,
+        0.2
+      ],
+      "peptide_log2_ratios": [
+        1.0,
+        1.0
+      ],
+      "protein_median_log2_ratio": 1.0,
+      "note": "Illustrative D/T and BH only, not a proteomics search-engine FDR implementation"
+    },
+    "cnv": {
+      "depth": [
+        100,
+        100,
+        50,
+        50,
+        150,
+        150
+      ],
+      "baseline": 100,
+      "log2_ratios": [
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        0.5849625007211562,
+        0.5849625007211562
+      ],
+      "ideal_CN": [
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        3.0,
+        3.0
+      ],
+      "purity_half_CN1_observed_log2": -0.4150374992788438,
+      "note": "Known baseline, no GC correction/segmentation/absolute CN fitting"
+    },
+    "intervals": {
+      "half_open_A": [
+        10,
+        20
+      ],
+      "B": [
+        20,
+        30
+      ],
+      "C": [
+        15,
+        25
+      ],
+      "overlap_AB": 0,
+      "overlap_AC": 5,
+      "position_1based_20_BED": [
+        19,
+        20
+      ],
+      "tie_query": [
+        40,
+        50
+      ],
+      "tie_genes": {
+        "left_gene": [
+          10,
+          30
+        ],
+        "right_gene": [
+          60,
+          80
+        ]
+      },
+      "nearest_boundary_gap_tie": {
+        "left_gene": 10,
+        "right_gene": 10
+      },
+      "note": "Zero-based geometric gaps, not bedtools closest -d distance convention"
+    },
+    "rare": {
+      "centered_columns": [
+        [
+          1.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        -1.0,
+        -1.0,
+        1.0
+      ],
+      "variant_scores": [
+        2.0,
+        -2.0
+      ],
+      "burden_score": 0.0,
+      "unit_weight_kernel_Q": 8.0,
+      "note": "Raw score cancellation illustration, no SKAT null distribution or P value"
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "scope": "Artificial arithmetic and toy algorithms; not production or real-data performance",
+  "python": "3.11.17",
+  "cases": 26,
+  "results": [
+    {
+      "case": "blast",
+      "page": "BLAST原理与种子延伸",
+      "stdout": "simple_hit {'score': 8, 'query_interval': [0, 4], 'subject_interval': [2, 6]}\nseed_miss []\nexact_local 3\n",
+      "checks": "passed"
+    },
+    {
+      "case": "pca",
+      "page": "PCA原理与实现",
+      "stdout": "singular_values [3.162278 0.      ]\nexplained_ratio [1. 0.]\nPC1_absolute_scores [2.236068 0.       2.236068]\nreconstruction_error 0.0\n",
+      "checks": "passed"
+    },
+    {
+      "case": "smith-waterman",
+      "page": "Smith-Waterman局部比对",
+      "stdout": "{'score': 8, 'query': 'ABCD', 'subject': 'ABCD', 'start': [0, 2], 'end': [4, 6]}\ngap_example 8 AB-CDE ABXCDE\n",
+      "checks": "passed"
+    },
+    {
+      "case": "t-tests",
+      "page": "t检验配对设计与Welch检验",
+      "stdout": "effect_SE_t 2.0 1.224745 1.632993\nWelch_p_df 0.163279 5.010309\npaired_t_p 4.898979 0.016277\n",
+      "checks": "passed"
+    },
+    {
+      "case": "mle-map",
+      "page": "似然最大似然与MAP估计",
+      "stdout": "MLE_MAP_mean 0.8 0.75 0.714286\nlikelihood_prefers_MLE True\n",
+      "checks": "passed"
+    },
+    {
+      "case": "hypothesis",
+      "page": "假设检验与双侧单侧选择",
+      "stdout": "one_sided 0.0546875\nprobability_ordered_two_sided 0.109375\n",
+      "checks": "passed"
+    },
+    {
+      "case": "classification",
+      "page": "分类指标ROC与PR曲线",
+      "stdout": "TP_FP_FN_TN 1 1 1 1 AUC 0.75 AP 0.833333\n",
+      "checks": "passed"
+    },
+    {
+      "case": "contingency",
+      "page": "列联表卡方与Fisher精确检验",
+      "stdout": "expected [[4.5, 5.5], [4.5, 5.5]]\nchi2_df_p 9.89899 1 0.001654\nOR_Fisher_p 36.0 0.005477\nrisk_ratio 8.0\n",
+      "checks": "passed"
+    },
+    {
+      "case": "global-alignment",
+      "page": "动态规划与序列比对基础",
+      "stdout": "4 ACGT A-GT\nrecomputed_score 4\n",
+      "checks": "passed"
+    },
+    {
+      "case": "bfs",
+      "page": "图与最短路径的生信入门",
+      "stdout": "distances [('A', 0), ('B', 1), ('C', 1), ('D', 2)]\nunreachable ['Z']\n",
+      "checks": "passed"
+    },
+    {
+      "case": "glm",
+      "page": "广义线性模型与逻辑回归",
+      "stdout": "probabilities 0.119203 0.213014\nOR_RR_RD 2.0 1.786986 0.093811\nPoisson_means_at_exposure_10_20 [1.0, 2.0]\n",
+      "checks": "passed"
+    },
+    {
+      "case": "search-hash",
+      "page": "排序查找与哈希在生信中的应用",
+      "stdout": "bounds 1 3\nclosed_3_8 [3, 3, 8]\noverlapping_kmers [('AT', 3), ('TA', 2)]\n",
+      "checks": "passed"
+    },
+    {
+      "case": "anova",
+      "page": "方差分析交互作用与对比",
+      "stdout": "SSB_SSW_F_P 24 6 12.0 0.008\ndifference_of_effects 2.0\n",
+      "checks": "passed"
+    },
+    {
+      "case": "gradient",
+      "page": "梯度下降与数值优化",
+      "stdout": "coefficient 2.999268\ngood_loss 4.5 1e-06\nbad_increases True\n",
+      "checks": "passed"
+    },
+    {
+      "case": "diagnostics",
+      "page": "正态性方差齐性与模型诊断",
+      "stdout": "residual_means 0.0 0.0\nsample_variances 1.0 16.0\nvariance_ratio 16.0\nShapiro_P_small_n 0.798951\nLevene_P_small_n 0.219307\n",
+      "checks": "passed"
+    },
+    {
+      "case": "confounding",
+      "page": "相关回归与混杂",
+      "stdout": "pooled_slope -1.303226\nadjusted_intercept_x_group [ 10.   1. -17.]\n",
+      "checks": "passed"
+    },
+    {
+      "case": "rank-tests",
+      "page": "秩检验符号检验与非参数方法",
+      "stdout": "U_A_exact_p 0.0 0.1\nsign_test 0.375\nsigned_rank 0.0 0.125\n",
+      "checks": "passed"
+    },
+    {
+      "case": "complexity",
+      "page": "算法输入输出复杂度与数据结构",
+      "stdout": "scan_checks 1000000\nbinary_upper_steps 20\ndense_GB 80.0\ndense_GiB 74.51\nclosed_interval [3, 3, 8]\n",
+      "checks": "passed"
+    },
+    {
+      "case": "resampling",
+      "page": "置换检验与Bootstrap实践",
+      "stdout": "allocations_exact_p 20 0.1\nbootstrap_draws 2000 mean_near 2.506\nrange 1.0 4.0\n",
+      "checks": "passed"
+    },
+    {
+      "case": "clustering",
+      "page": "聚类Kmeans与层次聚类",
+      "stdout": "labels [0, 0, 1, 1] centers [0.5, 9.5] SSE 1.0\nfinal_SSE 1.0 nonincreasing True\n",
+      "checks": "passed"
+    },
+    {
+      "case": "distance",
+      "page": "距离标准化与相似性",
+      "stdout": "raw 1000.0 3.0\nrescaled 1.414 3.0\nproportional_vectors 2.23606797749979 1.0\n",
+      "checks": "passed"
+    },
+    {
+      "case": "classifiers",
+      "page": "近邻朴素贝叶斯与决策树入门",
+      "stdout": "kNN [(9.0, 'B'), (10.0, 'B'), (1.0, 'A')] B\nNB_P_A 0.903226\ntree_Gini_gain 0.5\n",
+      "checks": "passed"
+    },
+    {
+      "case": "em",
+      "page": "EM算法与隐变量估计",
+      "stdout": "left_responsibilities [0.999996, 0.999447, 0.000553, 4e-06]\nnew_means [0.500838, 4.499162] weights [0.5, 0.5]\nloglik_before_after -7.44723 -6.943289\n",
+      "checks": "passed"
+    },
+    {
+      "case": "hmm",
+      "page": "隐马尔可夫模型与Viterbi解码",
+      "stdout": "Viterbi [0, 0, 1] 0.05184\ntotal_observation_probability 0.10452\n",
+      "checks": "passed"
+    },
+    {
+      "case": "fm-index",
+      "page": "BWT与FM索引的精确匹配",
+      "stdout": "prepend a interval 1 4\nprepend n interval 5 7\nprepend a interval 2 4\nSA [6, 5, 3, 1, 0, 4, 2] BWT annb$aa positions [1, 3]\n",
+      "checks": "passed"
+    },
+    {
+      "case": "debruijn",
+      "page": "deBruijn图与短读长组装原理",
+      "stdout": "kmers ['ATG', 'TGA', 'GAC', 'ACG']\nedges [('AT', 'TG'), ('TG', 'GA'), ('GA', 'AC'), ('AC', 'CG')]\nassembled ATGACG length 6\nAT_outneighbors ['TC', 'TG']\n",
+      "checks": "passed"
+    }
+  ],
+  "script_sha256": "fd35e9820d163409d79d0019cba684f4ad5a3cd11109d38b8884723e447caffa"
+}

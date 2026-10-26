@@ -1,0 +1,221 @@
+{
+  "python": "3.11.17 (main, Oct 13 2026, 16:45:47) [GCC 15.3.0]",
+  "blocks": [
+    {
+      "page": "BLAST原理与种子延伸",
+      "block": 1,
+      "code_sha256": "eb1ce7da84d1747431a1357138e8165b7f18e6fbb23d9c1ccfadce0e4965fda6",
+      "returncode": 0,
+      "stdout": "simple_hit {'score': 8, 'query_interval': [0, 4], 'subject_interval': [2, 6]}\nseed_miss []\nexact_local 3\n",
+      "stderr": ""
+    },
+    {
+      "page": "PCA原理与实现",
+      "block": 1,
+      "code_sha256": "7f14bab8ac0ef32a3f327cf4e829d7b659b8466a72c2b8c8e858b5454cbf7946",
+      "returncode": 0,
+      "stdout": "singular_values [3.162278 0.      ]\nexplained_ratio [1. 0.]\nPC1_absolute_scores [2.236068 0.       2.236068]\nreconstruction_error 0.0\n",
+      "stderr": ""
+    },
+    {
+      "page": "Smith-Waterman局部比对",
+      "block": 1,
+      "code_sha256": "31fcca4069a5aaeac0294bf1e8c774133b88ec357184966210378c14126bd54a",
+      "returncode": 0,
+      "stdout": "{'score': 8, 'query': 'ABCD', 'subject': 'ABCD', 'start': [0, 2], 'end': [4, 6]}\ngap_example 8 AB-CDE ABXCDE\n",
+      "stderr": ""
+    },
+    {
+      "page": "t检验配对设计与Welch检验",
+      "block": 1,
+      "code_sha256": "78cfe23feb245efae95d3c20c1542eb2703e391a4a947a32e3316bc68360cb68",
+      "returncode": 0,
+      "stdout": "effect_SE_t 2.0 1.224745 1.632993\nWelch_p_df 0.163279 5.010309\npaired_t_p 4.898979 0.016277\n",
+      "stderr": ""
+    },
+    {
+      "page": "似然最大似然与MAP估计",
+      "block": 1,
+      "code_sha256": "8c4855f5b5343de121b746b2edf3f5e63a323a04a1ccc11cc34f85ceb62c4c0b",
+      "returncode": 0,
+      "stdout": "MLE_MAP_mean 0.8 0.75 0.714286\nlikelihood_prefers_MLE True\n",
+      "stderr": ""
+    },
+    {
+      "page": "假设检验与双侧单侧选择",
+      "block": 1,
+      "code_sha256": "e8ac01f289ead4ddd84074e9359b97939448e41b840e4649f42911d63b0c0dd7",
+      "returncode": 0,
+      "stdout": "one_sided 0.0546875\nprobability_ordered_two_sided 0.109375\n",
+      "stderr": ""
+    },
+    {
+      "page": "分类指标ROC与PR曲线",
+      "block": 1,
+      "code_sha256": "6efeccd4f106185c982a514ae0fc1db8b08732dfd2a9fadff8a16386bd8dad32",
+      "returncode": 0,
+      "stdout": "TP_FP_FN_TN 1 1 1 1 AUC 0.75 AP 0.833333\n",
+      "stderr": ""
+    },
+    {
+      "page": "列联表卡方与Fisher精确检验",
+      "block": 1,
+      "code_sha256": "c204aa41c35e7b74ff91cac7000b45caddc4466cdb0fde196b012806f4340f3c",
+      "returncode": 0,
+      "stdout": "expected [[4.5, 5.5], [4.5, 5.5]]\nchi2_df_p 9.89899 1 0.001654\nOR_Fisher_p 36.0 0.005477\nrisk_ratio 8.0\n",
+      "stderr": ""
+    },
+    {
+      "page": "动态规划与序列比对基础",
+      "block": 1,
+      "code_sha256": "f313610bbcc533432f3e20d868dc8a2b3015a3c6125210878e0724d547d92634",
+      "returncode": 0,
+      "stdout": "4 ACGT A-GT\nrecomputed_score 4\n",
+      "stderr": ""
+    },
+    {
+      "page": "图与最短路径的生信入门",
+      "block": 1,
+      "code_sha256": "5799ebfb8064f3f4065495e2ccec4667464aa6a6379aad0dacaa02e9302ee9b6",
+      "returncode": 0,
+      "stdout": "distances [('A', 0), ('B', 1), ('C', 1), ('D', 2)]\nunreachable ['Z']\n",
+      "stderr": ""
+    },
+    {
+      "page": "广义线性模型与逻辑回归",
+      "block": 1,
+      "code_sha256": "babb4fa3f2f4d8a55e2144452a56facf09d1f3ca083838de834ca0b8c9df922d",
+      "returncode": 0,
+      "stdout": "probabilities 0.119203 0.213014\nOR_RR_RD 2.0 1.786986 0.093811\nPoisson_means_at_exposure_10_20 [1.0, 2.0]\n",
+      "stderr": ""
+    },
+    {
+      "page": "排序查找与哈希在生信中的应用",
+      "block": 1,
+      "code_sha256": "ca1d3b8ae2b3ea269a283d99a82e15165277a8137b6b41d6799dfd1c122f9bc4",
+      "returncode": 0,
+      "stdout": "bounds 1 3\nclosed_3_8 [3, 3, 8]\noverlapping_kmers [('AT', 3), ('TA', 2)]\n",
+      "stderr": ""
+    },
+    {
+      "page": "方差分析交互作用与对比",
+      "block": 1,
+      "code_sha256": "18b09aa1d08cdc6715672deee35c3266cf97a524b67b0d6568544facf2de1113",
+      "returncode": 0,
+      "stdout": "SSB_SSW_F_P 24 6 12.0 0.008\ndifference_of_effects 2.0\n",
+      "stderr": ""
+    },
+    {
+      "page": "梯度下降与数值优化",
+      "block": 1,
+      "code_sha256": "5f4a26421832a2094b7371811b83e6d362584afe87359ca32ee2da62047235f0",
+      "returncode": 0,
+      "stdout": "coefficient 2.999268\ngood_loss 4.5 1e-06\nbad_increases True\n",
+      "stderr": ""
+    },
+    {
+      "page": "正态性方差齐性与模型诊断",
+      "block": 1,
+      "code_sha256": "d1cc0f9e4e38abc979c309aee482cc9d3dea8f5a8042e609be6ef9c316e8ad35",
+      "returncode": 0,
+      "stdout": "residual_means 0.0 0.0\nsample_variances 1.0 16.0\nvariance_ratio 16.0\nShapiro_P_small_n 0.798951\nLevene_P_small_n 0.219307\n",
+      "stderr": ""
+    },
+    {
+      "page": "相关回归与混杂",
+      "block": 1,
+      "code_sha256": "15ebedd3533af7e7d6766c0ea50432cc526331b28caeebacb5a51763d693e5a0",
+      "returncode": 0,
+      "stdout": "pooled_slope -1.303226\nadjusted_intercept_x_group [ 10.   1. -17.]\n",
+      "stderr": ""
+    },
+    {
+      "page": "秩检验符号检验与非参数方法",
+      "block": 1,
+      "code_sha256": "fabaa9ddf10f717bcde2a7f806cc8368d6fc93988c20aa28b366359694448343",
+      "returncode": 0,
+      "stdout": "U_A_exact_p 0.0 0.1\nsign_test 0.375\nsigned_rank 0.0 0.125\n",
+      "stderr": ""
+    },
+    {
+      "page": "算法输入输出复杂度与数据结构",
+      "block": 1,
+      "code_sha256": "2520b02b5e76296682707226fcb05c14691c19c0e971c9327a3488ccc6635734",
+      "returncode": 0,
+      "stdout": "scan_checks 1000000\nbinary_upper_steps 20\ndense_GB 80.0\ndense_GiB 74.51\nclosed_interval [3, 3, 8]\n",
+      "stderr": ""
+    },
+    {
+      "page": "置换检验与Bootstrap实践",
+      "block": 1,
+      "code_sha256": "56e023c57a5bc08be5d94e19b9f921ef9e84f05c2816a4986cb0532f6c9ccfdc",
+      "returncode": 0,
+      "stdout": "allocations_exact_p 20 0.1\n",
+      "stderr": ""
+    },
+    {
+      "page": "置换检验与Bootstrap实践",
+      "block": 2,
+      "code_sha256": "909949de27c4962d8c0ae51ce26b27796f834d55ead1a39e8ef8c60ee141cc97",
+      "returncode": 0,
+      "stdout": "bootstrap_draws 2000 mean_near 2.506\nrange 1.0 4.0\n",
+      "stderr": ""
+    },
+    {
+      "page": "聚类Kmeans与层次聚类",
+      "block": 1,
+      "code_sha256": "b28c2fdcd631aa3516cd4a8f424c6777d91bcd5dd6964d346bf0a199ff3a252c",
+      "returncode": 0,
+      "stdout": "labels [0, 0, 1, 1] centers [0.5, 9.5] SSE 1.0\nfinal_SSE 1.0 nonincreasing True\n",
+      "stderr": ""
+    },
+    {
+      "page": "距离标准化与相似性",
+      "block": 1,
+      "code_sha256": "6398b28a47262ee5554679c56d2b5e0fe7412706b01f33b388de83b24ea85828",
+      "returncode": 0,
+      "stdout": "raw 1000.0 3.0\nrescaled 1.414 3.0\nproportional_vectors 2.23606797749979 1.0\n",
+      "stderr": ""
+    },
+    {
+      "page": "近邻朴素贝叶斯与决策树入门",
+      "block": 1,
+      "code_sha256": "d2349023c28df1cd2309879f99d32db118baf26016a19ea3df87911772d792f3",
+      "returncode": 0,
+      "stdout": "kNN [(9.0, 'B'), (10.0, 'B'), (1.0, 'A')] B\nNB_P_A 0.903226\ntree_Gini_gain 0.5\n",
+      "stderr": ""
+    },
+    {
+      "page": "EM算法与隐变量估计",
+      "block": 1,
+      "code_sha256": "a6ac2320cfc46b77c005c6a1450d4347c94519d73bae124edff8cbdc245fc5ef",
+      "returncode": 0,
+      "stdout": "left_responsibilities [0.999996, 0.999447, 0.000553, 4e-06]\nnew_means [0.500838, 4.499162] weights [0.5, 0.5]\nloglik_before_after -7.44723 -6.943289\n",
+      "stderr": ""
+    },
+    {
+      "page": "隐马尔可夫模型与Viterbi解码",
+      "block": 1,
+      "code_sha256": "ed30f30d67478b78dc09bf9415ad1a8a9bc0b96fb30f7460ecd02494312d3a0c",
+      "returncode": 0,
+      "stdout": "Viterbi [0, 0, 1] 0.05184\ntotal_observation_probability 0.10452\n",
+      "stderr": ""
+    },
+    {
+      "page": "BWT与FM索引的精确匹配",
+      "block": 1,
+      "code_sha256": "d06f6e513496c4d9a4051e1442719664fbfff8a671751253f55b9fe8bdbca398",
+      "returncode": 0,
+      "stdout": "prepend a interval 1 4\nprepend n interval 5 7\nprepend a interval 2 4\nSA [6, 5, 3, 1, 0, 4, 2] BWT annb$aa positions [1, 3]\n",
+      "stderr": ""
+    },
+    {
+      "page": "deBruijn图与短读长组装原理",
+      "block": 1,
+      "code_sha256": "d4d60617eaa1ed4b6cd7092dc664632d31e10e9d0dd6771f3372575db838d2a6",
+      "returncode": 0,
+      "stdout": "kmers ['ATG', 'TGA', 'GAC', 'ACG']\nedges [('AT', 'TG'), ('TG', 'GA'), ('GA', 'AC'), ('AC', 'CG')]\nassembled ATGACG length 6\nAT_outneighbors ['TC', 'TG']\n",
+      "stderr": ""
+    }
+  ]
+}
