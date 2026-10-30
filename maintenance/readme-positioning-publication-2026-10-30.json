@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-30",
+  "checked_at_UTC": "2026-10-30T02:00:13.035009+00:00",
+  "main_content_commit": "acd0977b307f059550a507e77fb112e0fb700934",
+  "wiki_commit": "dc43bb5bc44288533510928085c0313e02d070ae",
+  "requests": 9,
+  "verified": 9,
+  "results": [
+    {
+      "kind": "main",
+      "name": "CONTRIBUTING.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki-migrated/main/CONTRIBUTING.md",
+      "expected_sha256": "54f2250630cc67cebbd8a20ae0e28426f03eb4d27458bc24161815225ce95611",
+      "status": 200,
+      "actual_sha256": "54f2250630cc67cebbd8a20ae0e28426f03eb4d27458bc24161815225ce95611",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki-migrated/main/README.md",
+      "expected_sha256": "3587b5bb434044e6a267762742a0338512a74cbc22d83bce13586abb69008a26",
+      "status": 200,
+      "actual_sha256": "3587b5bb434044e6a267762742a0338512a74cbc22d83bce13586abb69008a26",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "maintenance/readme-positioning-2026-10-30.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki-migrated/main/maintenance/readme-positioning-2026-10-30.md",
+      "expected_sha256": "795265f781f9297780a12bc58da4145d7d6d6612934f9b291ad865e8f0a345bf",
+      "status": 200,
+      "actual_sha256": "795265f781f9297780a12bc58da4145d7d6d6612934f9b291ad865e8f0a345bf",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "scripts/export_wiki.py",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki-migrated/main/scripts/export_wiki.py",
+      "expected_sha256": "43c7af643ba52e98c5e297c11b46782e07ebcca8b265e8993d485ea0665d2a4a",
+      "status": 200,
+      "actual_sha256": "43c7af643ba52e98c5e297c11b46782e07ebcca8b265e8993d485ea0665d2a4a",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/.wiki-export.json",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki-migrated/main/wiki/.wiki-export.json",
+      "expected_sha256": "0e3ff59d74797080246b97324298596dc9a2149be47fe098d2c6ab0cb0bb8339",
+      "status": 200,
+      "actual_sha256": "0e3ff59d74797080246b97324298596dc9a2149be47fe098d2c6ab0cb0bb8339",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": ".wiki-export.json",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki-migrated/.wiki-export.json",
+      "expected_sha256": "0e3ff59d74797080246b97324298596dc9a2149be47fe098d2c6ab0cb0bb8339",
+      "status": 200,
+      "actual_sha256": "0e3ff59d74797080246b97324298596dc9a2149be47fe098d2c6ab0cb0bb8339",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/Home.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki-migrated/main/wiki/Home.md",
+      "expected_sha256": "14cd2b561e7200be3381198dc14217940622723ba2bba8a46d2ee341ba25ddc5",
+      "status": 200,
+      "actual_sha256": "14cd2b561e7200be3381198dc14217940622723ba2bba8a46d2ee341ba25ddc5",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "Home.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki-migrated/Home.md",
+      "expected_sha256": "14cd2b561e7200be3381198dc14217940622723ba2bba8a46d2ee341ba25ddc5",
+      "status": 200,
+      "actual_sha256": "14cd2b561e7200be3381198dc14217940622723ba2bba8a46d2ee341ba25ddc5",
+      "verified": true
+    },
+    {
+      "kind": "html",
+      "name": "Home",
+      "url": "https://github.com/SpiralKernel/bioinfo-wiki-migrated/wiki/Home",
+      "status": 200,
+      "actual_sha256": "e619d2bb188e3502f9ef223b28072ab8ce3e45eb63b78a4d986370b2ade35dbd",
+      "verified": true
+    }
+  ]
+}
