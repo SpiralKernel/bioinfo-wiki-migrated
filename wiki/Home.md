@@ -1,8 +1,8 @@
 # 中文生信 Wiki
 
-面向入门学生，按研究问题查概念、理解算法、选择流程并完成实践。
+持续完善的中文生物信息学知识库，系统连接概念与理论、方法与算法、工具与数据库、分析工作流及可复核案例。
 
-## 建议从这里开始
+## 专题导航与检索
 
 - [中文生信学习地图](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%B8%AD%E6%96%87%E7%94%9F%E4%BF%A1%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE)：了解前置知识和阅读顺序。
 - [方法与算法系统学习指南](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%96%B9%E6%B3%95%E4%B8%8E%E7%AE%97%E6%B3%95%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97)：按七条路线理解原理、手算、动手核对和排错。
@@ -23,7 +23,7 @@
 - [组学分析总览与选型](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E5%88%86%E6%9E%90%E6%80%BB%E8%A7%88%E4%B8%8E%E9%80%89%E5%9E%8B)：按测量对象选择组学流程。
 - [关键词索引](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%B3%E9%94%AE%E8%AF%8D%E7%B4%A2%E5%BC%95)：搜索中文名、英文名和缩写。
 
-## 可以立即运行的练习
+## 实践与验证案例
 
 - [人工长读长贯通SV调用与评估](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%BA%BA%E5%B7%A5%E9%95%BF%E8%AF%BB%E9%95%BF%E8%B4%AF%E9%80%9ASV%E8%B0%83%E7%94%A8%E4%B8%8E%E8%AF%84%E4%BC%B0)：实际Sniffles/Truvari、群体缺失与格式问题。
 - [官方TRGT小数据贯通重复分型](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%AE%98%E6%96%B9TRGT%E5%B0%8F%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9A%E9%87%8D%E5%A4%8D%E5%88%86%E5%9E%8B)：固定官方微型输入、长度和motif字段。

@@ -1,202 +1,106 @@
-# 中文生信 Wiki
+# 中文生信知识库
 
-面向入门学生，从群体分析、GWAS和GS出发，连接术语解释、算法、组学工作流和实践。
+一个持续建设的中文生物信息学知识库，系统整理基础概念、统计与计算方法、软件工具、数据资源和分析工作流，通过可追溯的案例连接原理、实现与结果解释。
 
-**阅读入口：[GitHub Wiki](https://github.com/SpiralKernel/bioinfo-wiki/wiki)** · **[关键词索引](https://github.com/SpiralKernel/bioinfo-wiki/wiki/关键词索引)**
+知识库覆盖从基础定义到研究应用的不同深度，支持概念查阅、方法比较、分析设计、软件选型、结果判读与流程复现。内容以研究问题和知识之间的依赖关系组织，逐步形成覆盖更广、解释更深入、实践更完整的知识体系。
 
-## 从哪里开始
+**[知识库首页](https://github.com/SpiralKernel/bioinfo-wiki-migrated/wiki)** · **[关键词索引](https://github.com/SpiralKernel/bioinfo-wiki-migrated/wiki/关键词索引)** · **[方法与算法](wiki/方法与算法系统学习指南.md)** · **[内容缺口与维护优先级](wiki/生信缺口清单与维护优先级.md)**
 
-- [方法与算法系统学习指南](wiki/方法与算法系统学习指南.md)：70篇方法按七条路线学习，含推导、算例、可执行代码、排错和自测。
-- [读懂方法公式的最小数学基础](wiki/读懂方法公式的最小数学基础.md)：先用一张表理解矩阵、对数和概率符号。
+## 内容体系
 
-- [变异注释与功能解释学习路线](wiki/变异注释与功能解释学习路线.md)：基因模型、转录本、后果提取和候选证据。
-- [生信缺口清单与维护优先级](wiki/生信缺口清单与维护优先级.md)：尚需补齐的真实数据和专业软件任务。
-- [全类型变异检测总览与证据地图](wiki/全类型变异检测总览与证据地图.md)：小变异、SV、CNV/PAV、STR/VNTR、TE和组装分支。
-- [人工长读长贯通SV调用与评估](wiki/人工长读长贯通SV调用与评估.md)：真实执行minimap2、Sniffles/SNF/force、Truvari两事件核对。
-- [官方TRGT小数据贯通重复分型](wiki/官方TRGT小数据贯通重复分型.md)：固定PacBio提供例，实际重复分型。
-- [变异检测分型与提取学习路线](wiki/变异检测分型与提取学习路线.md)：SNV/Indel、SV、CNV/PAV、STR、TE及生殖系/体细胞场景。
-- [人工VCF贯通变异分类与提取](wiki/人工VCF贯通变异分类与提取.md)：16条人工记录、真实bcftools操作与可核对输出。
+知识库按内容类型维护主要条目，通过专题导航连接同一研究问题涉及的概念、方法、工具与流程。
 
-- [R与Python生信编程入门路线](wiki/R与Python生信编程入门路线.md)：下载项目、运行脚本、语法、表格、绘图、环境与排错。
-- [bulkRNA-seq分析与实践路线](wiki/bulkRNA-seq分析与实践路线.md)：原始计数、配对设计、DESeq2与诊断。
-- [公开airway数据贯通DESeq2](wiki/公开airway数据贯通DESeq2.md)：8个真实公开计数样本、原生R实际运行。
-- [组学分析方法学习路线](wiki/组学分析方法学习路线.md)：RNA、单细胞、表观组、蛋白、代谢、微生物与多组学方法。
-- [群体遗传学分析学习路线](wiki/群体遗传学分析学习路线.md)：多样性、FST、祖源、近交、LD、选择和历史。
+| 内容类型 | 回答的问题 | 条目应包含什么 |
+|---|---|---|
+| 术语与概念 | 它是什么，与相关概念有什么区别？ | 定义、符号与单位、示例、关系、易混淆点和适用边界 |
+| 方法与算法 | 为什么这样分析，如何计算，有哪些取舍？ | 理论依据、必要推导、算法步骤、输入输出、假设、复杂度、参数影响与方法比较 |
+| 工具 | 如何用软件实现相应方法？ | 模型与功能、版本、数据要求、参数、运行方式、输出解释、诊断与限制 |
+| 数据库 | 数据来自哪里，记录应怎样解释？ | 收录范围、数据来源、检索与获取、标识符、参考版本、注释证据和更新机制 |
+| 分析工作流 | 如何完成一个可复查的研究任务？ | 研究设计、数据准备、处理步骤、质量控制、结果解释、排错及交付 |
+| 专题导航与学习路线 | 知识怎样关联，解决问题需要哪些前置？ | 主题地图、依赖关系、方法选择、关联条目及进一步阅读 |
 
-- [测序技术与PCR学习路线](wiki/测序技术与PCR学习路线.md)：PCR、Sanger、二代、长读长、建库与质控。
-- [人工区间贯通测序指标](wiki/人工区间贯通测序指标.md)：可运行的深度、双端重叠、重复、Phred和N50算例。
+一个知识点维护一个主要解释页。方法页负责原理与推理，工具页负责实现，工作流负责具体情境中的操作与判断；跨页通过链接衔接，保持内容可检索、可扩展、可维护。
 
-- [统计学与组学验证学习路线](wiki/统计学与组学验证学习路线.md)：概率、估计、基础检验及各组学验证。
-- [生信基础算法学习路线](wiki/生信基础算法学习路线.md)：数据结构、查找、图、动态规划、聚类与优化。
-- [组学验证的层级与证据](wiki/组学验证的层级与证据.md)：计算、统计、技术、独立样本和功能证据。
+## 主题导航
 
-- [中文生信学习地图](wiki/中文生信学习地图.md)：前置知识与阅读入口。
-- [群体分析与GWAS学习路线](wiki/群体分析与GWAS学习路线.md)：质控、PCA、模型与关联解释。
-- [GWAS软件选择与比较](wiki/GWAS软件选择与比较.md)：PLINK、GEMMA、GCTA、REGENIE、SAIGE、BOLT及育种常用工具。
-- [公开小鼠数据贯通多软件GWAS](wiki/公开小鼠数据贯通多软件GWAS.md)：真实公开数据、四个软件、七种配置及结果诊断图。
-- [GS算法软件与实践路线](wiki/GS算法软件与实践路线.md)：算法、六种软件、验证设计与候选预测。
-- [合成家系数据贯通GS](wiki/合成家系数据贯通GS.md)：300个人工个体、GBLUP与岭回归等价、嵌套验证和60个候选预测。
-- [组学分析总览与选型](wiki/组学分析总览与选型.md)：按研究问题选择测量与流程。
-- [合成数据贯通PCA与GWAS](wiki/合成数据贯通PCA与GWAS.md)：本项目实际运行的练习。
-- [BLAST原理与种子延伸](wiki/BLAST原理与种子延伸.md)：人工字符串教学实现。
+目前以群体遗传、GWAS、基因组选择和变异分析为较集中的主线，同时扩展统计计算、测序技术与多组学内容。各专题的覆盖深度和实测进展以条目说明为准。
 
-各篇标明更新时间与验证范围。组学实践包含官方数据、检查点和详细教程入口；本机没有运行的流程已明确标注。
+| 主题 | 主要内容 | 阅读入口 |
+|---|---|---|
+| 统计推断与研究设计 | 概率分布、估计、检验、回归、混合模型、重采样、多重比较与验证设计 | [统计学与组学验证](wiki/统计学与组学验证学习路线.md) |
+| 计算方法与序列算法 | 数据结构、搜索、动态规划、序列比对、图、矩阵分解、聚类、优化与隐变量模型 | [方法与算法系统指南](wiki/方法与算法系统学习指南.md) |
+| 测序技术与数据生成 | PCR、Sanger、短读长与长读长、建库、信号、误差、深度和覆盖 | [测序技术与PCR](wiki/测序技术与PCR学习路线.md) |
+| 变异检测与分型 | SNP/Indel、SV、CNV/PAV、STR/VNTR、TE插入、组装比较、群体分型与评估 | [全类型变异检测总览](wiki/全类型变异检测总览与证据地图.md) |
+| 基因组注释与功能解释 | 参考与基因模型、转录本、区间映射、变异后果、候选筛选与证据整合 | [变异注释与功能解释](wiki/变异注释与功能解释学习路线.md) |
+| 群体遗传学 | 多样性、FST、LD、亲缘、ROH、祖源、选择扫描、共祖与群体历史 | [群体遗传学分析](wiki/群体遗传学分析学习路线.md) |
+| 遗传关联与GWAS | 质控、群体结构、线性与混合模型、病例对照、稀有变异及软件比较 | [群体分析与GWAS](wiki/群体分析与GWAS学习路线.md) · [GWAS软件比较](wiki/GWAS软件选择与比较.md) |
+| 基因组选择与遗传评估 | GBLUP、RR-BLUP、REML、贝叶斯与核方法、系谱与单步模型、验证和候选预测 | [GS算法、软件与实践](wiki/GS算法软件与实践路线.md) |
+| 转录组与多组学 | bulk RNA-seq、单细胞、表观组、蛋白组、代谢组、微生物组、整合与批次处理 | [组学分析方法](wiki/组学分析方法学习路线.md) · [bulk RNA-seq](wiki/bulkRNA-seq分析与实践路线.md) |
+| 数据资源与分析工程 | 公共数据检索、样本核对、文件格式、R/Python、环境、日志和工作流管理 | [公共数据库与数据获取](wiki/公共数据库与数据获取.md) · [可复现分析与工作流](wiki/可复现分析与工作流管理.md) |
 
-## 运行教学例子
+参考和注释资源可从 [Ensembl](wiki/Ensembl参考与注释查询.md)、[UniProt](wiki/UniProt蛋白条目与证据.md) 与 [GO](wiki/GO术语注释与证据.md) 条目进入；公开研究与原始读段可从 [GEO](wiki/GEO数据检索与样本核对.md)、[SRA/ENA](wiki/SRA与ENA读段检索.md) 条目进入。
 
-先[下载项目ZIP](https://github.com/SpiralKernel/bioinfo-wiki/archive/refs/heads/main.zip)并解压，在含README.md与examples的根目录运行。Windows、macOS/Linux和RStudio的具体进入目录步骤见[路径与项目组织](wiki/R与Python路径文件与项目组织.md)。
+## 如何使用
 
-第一张表无需第三方包。macOS/Linux用`python3 examples/programming_basics.py`，Windows PowerShell用`python examples/programming_basics.py`；R控制台在项目根目录执行`source("examples/programming_basics.R")`。两张乱序人工表均得到8行、1个缺失、A有效n=3/均值2、B有效n=4/均值5.5。重复执行覆盖`examples/output/programming/`对应语言的同名文件。
+- **查询一个知识点**：用[关键词索引](wiki/关键词索引.md)查中文名、英文名或缩写，再沿前置、相关概念与方法链接深入。
+- **比较方法或选择软件**：先确认研究问题、数据类型、倍性、样本结构和目标效应，再比较假设、资源成本、输出与适用边界。
+- **设计或执行分析**：从对应工作流进入，核对输入、参考版本、关键步骤、检查点及结果所支持的结论。
+- **系统梳理一个领域**：使用专题路线连接基础、方法和应用；按需要阅读推导、实现和案例，不限定统一的阅读起点。
+- **复现一个结果**：先读案例的环境、输入来源与验证范围，再运行脚本，并对照实际输出和维护记录。
 
-需要第三方依赖时统一用项目环境；以下为macOS/Linux，Windows完整对应命令见[R包Python包与可复现环境](wiki/R包Python包与可复现环境.md)：
+## 实践与验证
 
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements-teaching.txt
-.venv/bin/python examples/programming_basics.py --plot
-.venv/bin/python examples/population_genetics_demo.py
-```
+案例分为人工算例、专业工具调用和公开数据分析等不同层次。每篇记录实际验证的部分、输入与版本，以及尚待验证的部分。
 
-群体案例内置8条完整单倍型×12位置，输出到`examples/output/population-genetics/`；导出的TSV为输出副本。教学指标不是专业WC/Hudson、ROH或历史推断实现。Python与群体案例已运行，base R完整表格/模型/绘图脚本通过WebR R4.6.0执行；2026-10-15又在原生R4.4.3复跑基础R脚本，并实际执行airway/DESeq2/apeglm案例；其他专业包仍按各页验证范围。结果、两位审阅者的反馈与修改见[本轮维护记录](maintenance/omics-population-programming-2026-10-14.md)。
+| 案例 | 可核对的内容 | 输入范围 |
+|---|---|---|
+| [公开小鼠数据贯通多软件GWAS](wiki/公开小鼠数据贯通多软件GWAS.md) | 多软件、模型配置与关联结果比较 | 公开小鼠数据 |
+| [合成家系数据贯通GS](wiki/合成家系数据贯通GS.md) | GBLUP与标记岭的关系、验证划分及候选预测 | 合成家系数据 |
+| [公开airway数据贯通DESeq2](wiki/公开airway数据贯通DESeq2.md) | 配对设计、差异表达、效应收缩与诊断 | 公开处理后计数 |
+| [人工长读长贯通SV调用与评估](wiki/人工长读长贯通SV调用与评估.md) | Sniffles调用、群体状态、强制分型与Truvari评估 | 人工参考及读段 |
+| [官方TRGT小数据贯通重复分型](wiki/官方TRGT小数据贯通重复分型.md) | 重复位点分型、坐标、等位长度与字段解释 | 固定的官方微型输入 |
+| [人工基因贯通区间注释与后果提取](wiki/人工基因贯通区间注释与后果提取.md) | SnpEff、区间注释、转录本与多等位后果 | 人工参考、基因模型与变异 |
+| [最小注释工作流与Snakemake恢复](wiki/最小注释工作流与Snakemake恢复.md) | 依赖关系、重复运行与缺失结果恢复 | 固定的微型分析任务 |
+| [方法与算法配套算例](wiki/方法与算法系统学习指南.md) | 统计计算、算法步骤、参数影响与反例 | 人工数字、矩阵和序列 |
 
-本轮变异案例需要bcftools1.22与+fill-tags插件，基础Python代码只用标准库。先按[bcftools环境页](wiki/bcftools变异操作与表达式.md)建立环境；以下从项目根目录运行：
+脚本位于 [`examples/`](examples/)，公开汇总、环境和配图位于 [`assets/`](assets/)，详细验证与修订记录位于 [`maintenance/`](maintenance/)。具体依赖、命令、输入下载和覆盖规则在对应案例中维护。
 
-```bash
-conda run -n variants python examples/variant_extraction_demo.py
-python3 examples/pav_matrix_demo.py
-# 配图另需已安装Matplotlib的项目Python环境：
-.venv/bin/python examples/plot_variant_extraction.py
-```
-
-固定人工输入在`examples/data/variants/`，输出分别为`examples/output/variants/`与`examples/output/pav-matrix/`，重复执行覆盖同名输出。VCF案例实际运行了标准化、类型/区域/样本提取、GT掩蔽与频率重算，还用40条人工SAM比对调用一个已知杂合SNV；未执行真实read mapper或专业SV/CNV/STR/TE调用器。PAV脚本只整理已经人工指定的状态，保留未知为NA，不发现基因缺失。详情见[变异首轮记录](maintenance/variants-round1-2026-10-14.md)。
-
-新增注释、真实mapper调用链和工作流案例：Java/SnpEff/bedtools环境准备见[注释案例](wiki/人工基因贯通区间注释与后果提取.md)，minimap2/samtools/bcftools环境见[FASTQ案例](wiki/从FASTQ到比对检查与变异调用.md)。确认工具在PATH并设置SNPEFF_JAR为核心jar的绝对路径后，在项目根目录运行：
+例如，在项目根目录使用 Python 3.10+ 查看并运行一个仅依赖标准库的方法算例：
 
 ```bash
-python3 examples/annotation_demo.py
-python3 examples/genome_alignment_demo.py
-# 绘图另需项目Matplotlib环境：
-.venv/bin/python examples/plot_annotation.py
-```
-
-输出分别在examples/output/annotation、alignment-chain、annotation-plots，重复执行覆盖同名文件。固定输入是1600bp人工参考、三条转录本、12条VCF及40条人工FASTQ；注释VCF与reads调用结果是两个不同任务。实际验证3条CDS/蛋白零错误、负链与多ALT关联，以及预设杂合SNV。Snakemake9.27.0的安装、首次运行与缺失表恢复见[工作流案例](wiki/最小注释工作流与Snakemake恢复.md)，验证器仅使用新的独立目录。
-
-本轮VEP、版本转换、多倍体/细胞器专业分析未执行。结果、工具归档SHA和范围见[注释与工作流记录](maintenance/annotation-workflow-round1-2026-10-14.md)。
-
-真实RNA计数案例使用固定airway包，已有Conda时在项目根目录运行：
-
-```bash
-conda env create -f examples/environments/rnaseq.yml
-conda run -n wiki-rnaseq Rscript examples/test_rnaseq_inputs.R
-conda run -n wiki-rnaseq Rscript examples/rnaseq_airway_demo.R
-```
-
-本机Linux原生R4.4.3、DESeq2 1.46.0、airway1.26.0与apeglm1.28.0实际安装运行。8个样本配对设计，保留22,369个基因；普通Wald FDR<0.05为4,030个，绝对log2FC超过1的专门检验为243个。完整结果在examples/output/rnaseq-airway，非空输出目录会拒绝运行；传新的目录可另作练习。重画已有结果用`conda run -n wiki-rnaseq Rscript examples/plot_rnaseq_airway.R`，只更新图。
-
-输入来自已有公开计数，未重跑FASTQ、STAR、featureCounts、Salmon/tximport或富集。基础R输入检查无需第三方包；完整检查用RSCRIPT_BIN指定原生Rscript。环境、输出和边界见[本轮记录](maintenance/rnaseq-round1-2026-10-15.md)。
-
-本轮专业调用微型案例在Linux x86_64隔离环境实际执行，在项目根目录运行：
-
-```bash
-conda env create -f examples/environments/variant-calling.yml
-conda run -n wiki-variant-calling python examples/variant_calling_demo.py
-conda run -n wiki-variant-calling python examples/variant_calling_demo.py --case small
-# TRGT先按对应工具页取得官方二进制，并设置TRGT_BIN为绝对路径：
-conda run -n wiki-variant-calling python examples/trgt_official_demo.py
-```
-
-SV/FreeBayes输入完全人工，TRGT输入为固定官方fixture并核对SHA。输出分别为examples/output/calling-sv、calling-small、trgt-official；非空目录拒绝覆盖，重复练习用--output换新目录。Sniffles2.8.1、Truvari5.5.0、FreeBayes1.3.10、TRGT5.1.0均已执行；Sniffles force格式/继承样本表头的问题保留raw与受限.compat副本，GQ=0和群体缺失如实报告，不外推真实检测性能。
-
-图另需Matplotlib，可在环境内安装后执行`conda run -n wiki-variant-calling python examples/plot_variant_calling.py`。完整回归还需requirements-teaching.txt中的科学计算包，以及各集成测试对应工具；没有时明确跳过。范围、两位子代理问题及修订见[本轮记录](maintenance/variant-detection-round2-2026-10-15.md)。
-
-Python 3.9+ 可运行序列比对教学例子；它不依赖第三方包，不是完整BLAST实现：
-
-```bash
-python3 examples/alignment_demo.py
-```
-
-群体练习另需[PLINK 2](https://www.cog-genomics.org/plink/2.0/)，使用固定种子生成120个人工样本和600个位点：
-
-```bash
-bash examples/run_population_demo.sh
-# 若不在PATH：
-PLINK2_BIN=/完整路径/plink2 bash examples/run_population_demo.sh
-```
-
-输出在 `examples/output/population/`，重复运行覆盖其中同名结果。详见[实测记录](maintenance/validation-2026-10-13.md)。二进制、练习输出和原稿私有备份不提交。
-
-完整公开小鼠案例的工具依赖、运行方式与验证范围见[第二轮GWAS记录](maintenance/gwas-round2-2026-10-13.md)。代码为 `examples/gwas_software_demo.py` 和 `examples/plot_gwas_comparison.py`；公开配图与汇总指标在 `assets/gwas-round2/`，个体数据仍不纳入仓库。
-
-GS教学例子依赖NumPy，配图另需Matplotlib：
-
-```bash
-.venv/bin/python examples/genomic_prediction_demo.py
-.venv/bin/python examples/plot_genomic_prediction.py
-```
-
-输出在 `examples/output/gs/`，重复运行覆盖同名文件；建议使用项目虚拟环境。实际结果和验证范围见[GS第一轮记录](maintenance/gs-round1-2026-10-13.md)。专业GS软件的模板尚未运行，教学实现不包含REML、MCMC或ssGBLUP。
-
-统计与基础算法练习建议Python 3.10+，依赖NumPy、SciPy 1.15+（rng接口）和Matplotlib：
-
-```bash
-.venv/bin/python examples/statistics_demo.py
-.venv/bin/python examples/basic_algorithms_demo.py
-```
-
-[统计案例](wiki/合成数据贯通统计推断.md)实际运行了均值、配对、分类表、区间、置换、多重校正与供体层级反例；[算法练习](wiki/基础算法可复现练习.md)包含六类小型实现。两者均为人工数据，原始输出分别在 `examples/output/statistics/` 和 `examples/output/basic-algorithms/`，重复运行覆盖同名文件。版本与边界见[本轮维护记录](maintenance/statistics-round1-2026-10-13.md)。分组学验证页提供设计指南，未执行湿实验。
-
-测序指标算例只需Python 3.9+；配图另需Matplotlib：
-
-```bash
-python3 examples/sequencing_metrics_demo.py
-python3 examples/plot_sequencing_metrics.py
-```
-
-输出在`examples/output/sequencing/`，重复运行覆盖同名文件。区间和分子身份是人工真值，没有运行比对或去重工具。PCR、建库、测序仪及外部质控软件页为原理和判读指南，尚未执行实验。范围与结果见[本轮测序记录](maintenance/sequencing-round1-2026-10-13.md)。
-
-## 方法与算法的配套练习
-
-原有66篇方法已逐篇深化，新增EM、HMM、BWT/FM索引和de Bruijn图；系统指南给出前置、共同基础与七条专题路线。教学结构参考GTN、Bioinformatics Workbook、SeqAn与Truvari Wiki，正文和人工例独立撰写。三套runner共70个方法算例，部分基础例需要NumPy/SciPy，其余只用标准库：
-
-```bash
-# 按前文建立.venv并安装requirements-teaching.txt，在项目根目录运行：
-.venv/bin/python examples/methods_foundations_demo.py --list
-.venv/bin/python examples/methods_foundations_demo.py --case pca --output examples/output/methods-pca
 python3 examples/methods_genetics_demo.py --list
-python3 examples/methods_genetics_demo.py --case gblup --output examples/output/methods-gblup
-python3 examples/methods_omics_demo.py --list
-python3 examples/methods_omics_demo.py --case pseudobulk --output examples/output/methods-pseudobulk
-# 两张自绘图：
-.venv/bin/python examples/plot_methods_foundations.py
+python3 examples/methods_genetics_demo.py --case ld
 ```
 
-Windows PowerShell使用`.venv\Scripts\python.exe`替换`.venv/bin/python`，系统Python命令也可使用已安装的`python`。运行目录需含README与examples。保存结果时拒绝覆盖非空目录，重复练习用新的--output；genetics不传--output只打印结果，omics默认按case写入其输出目录。不要把教学算术视为执行了REML、SKAT、真实组装或测序实验，专业范围逐页声明。结果、图、环境与双代理审阅见[本轮维护记录](maintenance/methods-depth-2026-10-26.md)。
+Windows可使用已安装的`python`或`py`替换`python3`。此命令向终端打印JSON；保存结果可传`--output`指定新的目录。其他算例可能依赖NumPy/SciPy、R/Bioconductor或专业工具，按各自说明准备环境。输入来源、计算正确性、统计有效性和生物学解释分别核对。
 
-## 在Obsidian编写并发布
+## 内容质量标准
 
-原稿在 Obsidian 的 `知识库/中文生信Wiki`；本仓库 `wiki/` 是生成的发布版。写作属性和维护规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+- **完整解释**：说明问题、前置、定义、核心原理、必要推导、使用条件和结论边界；复杂主题分层展开，保留深入阅读路径。
+- **可比较的方法**：区分相邻方法的目标、假设、统计量、参数、成本与适用场景，解释何时应选择或更换方法。
+- **可执行的实践**：操作内容写明输入、环境、运行目录、关键参数、预期检查点、异常诊断和输出含义。
+- **可追溯的证据**：关键事实引用原始研究或官方资料，记录软件、数据库和参考版本；区分理论说明、人工演算、专业实跑与真实数据评估。
+- **持续维护**：保留别名、更新时间、验证范围及条目关系；改动公式、数据或代码时同步核对受影响结果。
+
+覆盖广度与解释深度共同推进。具体扩展包括组装与比较基因组、系统发育、QTL精细定位与共定位、泛基因组、真实CNV/TE及更多组学原始数据流程；各项现状与交付要求见[维护优先级](wiki/生信缺口清单与维护优先级.md)。
+
+## 编写与维护
+
+正文在 Obsidian 的`知识库/中文生信Wiki`维护，本仓库的`wiki/`为导出版本，GitHub Wiki为在线阅读入口。首页、侧边栏与关键词索引自动生成。具体属性、链接规则、核验要求与发布检查见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ```bash
+# 将路径替换为实际原稿目录；--refresh-index同时更新原稿中的自动索引。
 python3 scripts/export_wiki.py --source '/你的Obsidian库/知识库/中文生信Wiki' --refresh-index
-# 完整集成检查另需bcftools及+fill-tags、Java/SnpEff、bedtools、minimap2和samtools；缺少工具时相应项目明确跳过：
-conda run -n variants .venv/bin/python -m unittest discover -s tests -v
 bash scripts/publish_wiki.sh
 ```
 
-导出只读取六类目录：学习路线、术语与概念、方法与算法、工具、数据库、分析工作流。草稿和待编写页面默认不导出；正文属性会转换为公开的状态、更新时间及验证说明，首页、侧边栏和关键词索引自动生成。默认不修改原稿；`--refresh-index` 只刷新原稿中的自动索引。模板、写作入口、私有备份和其他Obsidian笔记不导出。
-
-内部链接支持标题、相对笔记路径、Wiki根路径和无歧义别名；代码块与行内代码中的双括号保持原样。断链、重名、缺少必要属性、未闭合代码块会停止导出。Obsidian嵌入和标题锚点暂不支持；附件不自动复制，添加图片前需自行安排公开资源及检查标准Markdown路径。
-
-发布脚本使用Git与已登录的GitHub CLI，在旁边的独立 `bioinfo-wiki.wiki` 仓库拉取、校验、同步并推送。仅同步清单中的文件；删除或改名只清理此前受管理的旧页，保留其他页面。若受管理页面曾在网页上修改，发布会停止，需先把差异合回Obsidian原稿。首次从旧版升级也会核对旧文件校验值。初次启用GitHub Wiki时需要先在网页创建第一页，本项目已完成。
-
-## 项目结构
+发布脚本需要Git和有效的GitHub身份认证，会从主仓库当前`origin`确定Wiki远程。同步只管理导出清单中的页面；检测到网页人工修改时停止，先将差异合回原稿再发布。
 
 ```text
-examples/                  人工数据与算法教学代码
-scripts/export_wiki.py     校验链接、导出文章、生成导航和索引
-scripts/sync_wiki_files.py  校验清单并保护远程人工修改
-scripts/publish_wiki.sh     发布到Wiki独立仓库
-tests/                     教学算法、字段语义、导出与安全同步检查
-maintenance/               验证记录（私有备份目录除外）
-wiki/                      可检查和提交的发布文件
+wiki/          知识库正文、主题导航与自动索引的导出版本
+examples/      算例、分析脚本、固定输入与环境模板
+assets/        可公开的结果摘要、图表与验证材料
+scripts/       导出、校验、同步和发布工具
+tests/         算法、数据语义及导出同步的自动检查
+maintenance/   实测范围、修订与发布核验记录
 ```
